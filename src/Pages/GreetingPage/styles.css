@@ -1,0 +1,46 @@
+.primary_gradient {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+
+  background: radial-gradient(
+        92.67% 92.21% at 10.2% 7.33%,
+        rgba(0, 255, 240, 0) 43.66%,
+        rgba(94, 212, 190, 0.102) 91.66%,
+        rgba(0, 0, 0, 0) 100%
+      )
+      /* Gradient left */,
+    radial-gradient(
+        117.97% 279.22% at 121.25% 161.48%,
+        rgba(0, 142, 134, 0.0884705) 16.14%,
+        rgba(0, 255, 240, 0) 34.46%,
+        rgba(0, 0, 0, 0.2) 81.66%
+      )
+      /* Gradient Contrast left */,
+    radial-gradient(
+        28.87% 68.32% at 78.44% 52.34%,
+        rgba(94, 212, 191, 0.05) 0%,
+        rgb(36, 75, 74) 0%,
+        #131a2b 100%
+      )
+      /* Gradient right */;
+}
+
+.style_vl {
+  border-right: rgba(139, 255, 234, 0.3) solid 2px;
+  height: 40vh;
+  right: 2.5em;
+  top: 60vh;
+}
+
+@media screen and (max-height: 900px) {
+  #link_icons {
+    transform: translateY(-1vh);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .md_hidden {
+    display: none;
+  }
+}

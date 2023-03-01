@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Source Code Pro", monospace;
+  background-color: #131a2b;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-primary {
+  background-color: rgba(139, 255, 234, 0.3);
+}
+
+.text_style2 {
+  font-family: "Roboto", sans-serif;
+}

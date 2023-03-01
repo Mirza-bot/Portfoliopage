@@ -1,0 +1,19 @@
+.secondary_gradient {
+  width: 100vw;
+  height: 100vh;
+
+  background: radial-gradient(
+        17.97% 79.22% at 121.25% 61.48%,
+        rgba(0, 142, 134, 0.0884705) 16.14%,
+        rgba(0, 255, 240, 0) 34.46%,
+        rgba(0, 0, 0, 0.2) 81.66%
+      )
+      /* Gradient Contrast left */,
+    radial-gradient(
+        58.87% 198.32% at 90.44% 150.34%,
+        rgba(94, 212, 191, 0.05) 0%,
+        rgb(36, 75, 74) 0%,
+        #131a2b 100%
+      )
+      /* Gradient right */;
+}
