@@ -28,19 +28,13 @@
 
 .style_vl {
   border-right: rgba(139, 255, 234, 0.3) solid 2px;
-  height: 40vh;
+  height: 23.5vh;
+  bottom: 0vh;
   right: 2.5em;
-  top: 60vh;
 }
 
 @media screen and (max-height: 900px) {
   #link_icons {
     transform: translateY(-1vh);
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .md_hidden {
-    display: none;
   }
 }

@@ -5,6 +5,7 @@ module.exports = {
     "./src/Pages/GreetingPage/GreetingPage.jsx",
     "./src/Pages/AboutMePage.jsx/AboutMePage.jsx",
     "./src/components/buttons/BasicBtn.jsx",
+    "./src/components/buttons/IconLink.jsx",
   ],
   theme: {
     colors: {
