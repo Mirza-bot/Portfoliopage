@@ -26,9 +26,21 @@
       /* Gradient right */;
 }
 
+@media (orientation: landscape) and (hover: none) and (pointer: coarse) {
+  .primary_gradient {
+    height: 200vh;
+  }
+  .style_vl {
+    display: none;
+  }
+  #link_icons {
+    display: none;
+  }
+}
+
 .style_vl {
   border-right: rgba(139, 255, 234, 0.3) solid 2px;
-  height: 23.5vh;
+  height: 25.5vh;
   bottom: 0vh;
   right: 2.5em;
 }

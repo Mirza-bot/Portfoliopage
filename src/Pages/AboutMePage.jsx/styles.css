@@ -16,3 +16,9 @@
       )
       /* Gradient right */;
 }
+
+@media screen and (min-width: 768px) {
+  .avatar_img_min_size {
+    min-width: 168px;
+  }
+}

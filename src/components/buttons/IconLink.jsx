@@ -4,9 +4,14 @@ function IconLink({ iconLogo, targetLink, linkName }) {
       href={targetLink}
       target="_blank"
       rel="noopener noreferrer"
-      className=" hover:cursor-pointer"
+      className=" hover:cursor-pointer mb-3"
     >
-      <img src={iconLogo} alt={linkName} className=" hover:scale-125 mt-2 " />
+      <img
+        src={iconLogo}
+        alt={linkName}
+        title={linkName}
+        className=" hover_scale "
+      />
     </a>
   );
 }
