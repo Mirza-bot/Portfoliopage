@@ -1,11 +1,12 @@
 import GreetingPage from "./Pages/GreetingPage/GreetingPage";
-import AboutMePage from "./Pages/AboutMePage.jsx/AboutMePage";
+import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
 import "./main.css";
+import AboutMeCard from "./components/Cards/AboutMeCard/AboutMeCard";
 function App() {
   return (
     <>
       <GreetingPage />
-      <AboutMePage />
+      <ProjectsPage />
     </>
   );
 }

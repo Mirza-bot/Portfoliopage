@@ -1,0 +1,11 @@
+@media screen and (min-width: 768px) {
+  .avatar_img_min_size {
+    min-width: 168px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #avatar {
+    max-width: 300px;
+  }
+}

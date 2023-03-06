@@ -3,17 +3,25 @@ module.exports = {
   content: [
     "./index.html.html",
     "./src/Pages/GreetingPage/GreetingPage.jsx",
-    "./src/Pages/AboutMePage.jsx/AboutMePage.jsx",
+    "./src/components/Cards/AboutMeCard/AboutMeCard.jsx",
+    "./src/Pages/ProjectsPage/ProjectsPage.jsx",
     "./src/components/buttons/BasicBtn.jsx",
     "./src/components/buttons/IconLink.jsx",
+    "./src/components/Cards/ProjectCard/ProjectCard.jsx",
+    "./src/components/Sections/ProjectSection/ProjectSection.jsx",
   ],
   theme: {
     colors: {
+      white: "white",
+      black: "black",
       primary: {
-        light: "rgba(139, 255, 234, 0.3)",
-        dark: "rgba(0, 160, 131, 0.55)",
+        light: "rgba(112,204,192,0.4)",
+        dark: "rgba(139, 255, 234, 0.1)",
       },
-      secondary: "rgba(15, 118, 110, 0.3)",
+      secondary: {
+        light: "rgba(19, 26, 43, 0.7)",
+        dark: "rgba(19, 26, 83, 0.3)",
+      },
       primaryText: "#5eead4",
       blue500: "#3b82f6",
       sky300: "#7dd3fc",

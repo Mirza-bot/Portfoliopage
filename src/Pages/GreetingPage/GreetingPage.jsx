@@ -7,13 +7,14 @@ function GreetingPage() {
   return (
     <div className="primary_gradient sm:pt-10 pt-3">
       <div className="grid grid-cols-10 grid-rows-6 mt-16 sm:m-10 m-2 ">
-        <div className="col-start-1">
+        <a target="_self" href="/" className="col-start-1 hover:cursor-pointer">
           <svg
             width="57"
             height="55"
             viewBox="0 0 57 55"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
+            className="ml-8"
           >
             <path
               d="M56 27.5C56 42.6878 43.464 55 28 55C12.536 55 0 42.6878 0 27.5C0 12.3122 12.536 0 28 0C43.464 0 56 12.3122 56 27.5Z"
@@ -25,29 +26,29 @@ function GreetingPage() {
               fill="#131A2B"
             />
           </svg>
-        </div>
+        </a>
         <div className="lg:col-start-8 lg:col-span-1 md:col-start-6 md:col-span-2 sm:col-start-6 sm:col-span-2">
-          <span className="hover:cursor-pointer hover:text-primaryText md_hidden">
+          <span className="hover:cursor-pointer hover:text-primaryText md_hidden select-none">
             About Me
           </span>
         </div>
         <div className="lg:col-start-9 lg:col-span-1 md:col-start-8 md:col-span-2 sm:col-start-8 sm:col-span-2">
-          <span className="hover:cursor-pointer hover:text-primaryText md_hidden">
+          <span className="hover:cursor-pointer hover:text-primaryText md_hidden select-none">
             Projects
           </span>
         </div>
         <div className="col-start-10">
-          <span className=" hover:cursor-pointer hover:text-primaryText md_hidden">
+          <span className=" hover:cursor-pointer hover:text-primaryText md_hidden select-none">
             Contact
           </span>
         </div>
-        <div className="xl:col-span-4 xl:col-start-2 md:col-span-7 md:col-start-2 sm:col-start-2 col-start-2 sm:row-start-3 md:row-start-4 row-start-4 col-span-10">
+        <div className="xl:col-span-4 xl:col-start-2 md:col-span-7 md:col-start-2 sm:col-start-2 col-start-2 row-start-4 col-span-10">
           <p className="text-4xl sm:text-6xl font-semibold ">Malkoc Mirza</p>
           <p className="text-2xl sm:text-3xl text-gray mt-3 tracking-tighter">
             {softwareDeveloper}
           </p>
         </div>
-        <div className="text_style2 xl:col-span-3 xl:col-start-2  md:col-span-4 md:col-start-2 sm:row-start-4 row-start-5 md:row-start-5 col-span-8 col-start-2 sm:mt-3">
+        <div className="text_style2 text-lg xl:col-span-3 xl:col-start-2  md:col-span-4 md:col-start-2 row-start-5 md:row-start-5 col-span-8 col-start-2 sm:mt-3">
           <p>
             My passion for development drives creativity, satisfaction of
             solving complex problems with elegant solutions and constant
@@ -55,23 +56,26 @@ function GreetingPage() {
           </p>
         </div>
         <div className="sm:row-span-5 row-start-6 col-span-1 col-start-2">
-          <BasicBtn buttonName={"<explore/>"} />
+          <BasicBtn buttonName={"<explore/>"} alternative="" />
         </div>
         <div
           id="link_icons"
-          className="absolute w-8 right-6 top-2/3 md_hidden leading-3"
+          className="bg-primaryText absolute w-10 right-5 top-2/3 md_hidden leading-3 z-10 rounded-full"
         >
-          <IconLink
-            linkName={"LinkedIn"}
-            targetLink={"http://linkedin.com/in/mirzamalkoc"}
-            iconLogo={"/LinkedIn.svg"}
-          />
-          <br />
-          <IconLink
-            linkName={"Github"}
-            targetLink={"https://github.com/Mirza-bot"}
-            iconLogo={"/GitHub-Mark 1.svg"}
-          />
+          <div className="bg-secondary-light p-1 rounded-full  m-1">
+            <IconLink
+              linkName={"LinkedIn"}
+              targetLink={"http://linkedin.com/in/mirzamalkoc"}
+              iconLogo={"/LinkedIn.svg"}
+            />
+          </div>
+          <div className="bg-secondary-light p-1 m-1 rounded-full">
+            <IconLink
+              linkName={"Github"}
+              targetLink={"https://github.com/Mirza-bot"}
+              iconLogo={"/GitHub-Mark 1.svg"}
+            />
+          </div>
         </div>
         <div className="absolute style_vl pt-5 md_hidden"></div>
       </div>

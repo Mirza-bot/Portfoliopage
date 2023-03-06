@@ -1,6 +1,6 @@
 .primary_gradient {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   color: white;
 
   background: radial-gradient(
@@ -39,8 +39,8 @@
 }
 
 .style_vl {
-  border-right: rgba(139, 255, 234, 0.3) solid 2px;
-  height: 25.5vh;
+  border-right: #5eead4 solid 2px;
+  height: 30.5vh;
   bottom: 0vh;
   right: 2.5em;
 }

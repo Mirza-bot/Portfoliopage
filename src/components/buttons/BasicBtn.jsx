@@ -1,9 +1,13 @@
-function BasicBtn({ buttonName }) {
-  return (
+function BasicBtn({ buttonName, alternative, addClass }) {
+  return !alternative ? (
     <button
-      className={
-        "rounded-lg mt-2 px-3 py-2 text-primaryText bg-primary  hover:bg-primary-dark active:bg-secondary active:border-primaryText active:ring-2 ring-primaryText"
-      }
+      className={`text-primaryText font-semibold select-none rounded-lg mt-2 px-3 py-2 ${addClass} bg-primary-dark  hover:bg-primary-light active:bg-secondary-light active:border-primaryText active:ring-2 ring-primaryText transition-all ease-in-out duration-100`}
+    >
+      {buttonName}
+    </button>
+  ) : (
+    <button
+      className={`text-primaryText font-semibold select-none rounded-lg mt-2 px-3 py-2 ${addClass} bg-secondary-dark hover:bg-secondary-light active:bg-secondary-light active:border-primaryText active:ring-2 ring-primaryText transition-all ease-in-out duration-100`}
     >
       {buttonName}
     </button>
