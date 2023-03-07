@@ -28,7 +28,11 @@ module.exports = {
       fuchsia400: "#e879f9",
       gray: "#9ca3af",
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        "3xl": "-5px 5px 6px 0px rgba(0, 0, 0, 0.458);",
+      },
+    },
   },
   plugins: [],
 };

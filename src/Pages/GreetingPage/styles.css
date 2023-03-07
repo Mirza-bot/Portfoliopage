@@ -26,6 +26,10 @@
       /* Gradient right */;
 }
 
+#grid_container {
+  max-height: 80vh;
+}
+
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
   .primary_gradient {
     height: 200vh;
@@ -40,9 +44,9 @@
 
 .style_vl {
   border-right: #5eead4 solid 2px;
-  height: 30.5vh;
+  height: 26vh;
   bottom: 0vh;
-  right: 2.5em;
+  right: 2.1rem;
 }
 
 @media screen and (max-height: 900px) {

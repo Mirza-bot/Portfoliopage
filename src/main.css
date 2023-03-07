@@ -21,10 +21,6 @@ body {
   padding: 0;
 }
 
-.bg-primary {
-  background-color: rgba(139, 255, 234, 0.3);
-}
-
 .text_style2 {
   font-family: "Roboto", sans-serif;
 }
@@ -42,9 +38,9 @@ body {
 }
 
 .hover_scale {
-  transition: all 100ms ease-in-out 0s;
+  transition: all 250ms ease-in-out 0s;
 }
 
 .hover_scale:hover {
-  transform: scale(1.25);
+  transform: scale(1.15);
 }

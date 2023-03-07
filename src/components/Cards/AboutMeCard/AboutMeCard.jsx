@@ -8,16 +8,14 @@ function AboutMeCard() {
         <span className=" text-3xl  text-gray">
           {"{"}About Me{"}"}
         </span>
-        <div className="portrait:md_displayed md_displayed float-right flex justify-between w-16 mt-2">
+        <div className="portrait:md_displayed md_displayed float-right flex justify-between text-2xl w-16 ">
           <IconLink
-            linkName={"Github"}
+            linkName={"GitHub"}
             targetLink={"https://github.com/Mirza-bot"}
-            iconLogo={"/GitHub-Mark 1.svg"}
           />
           <IconLink
             linkName={"LinkedIn"}
             targetLink={"http://linkedin.com/in/mirzamalkoc"}
-            iconLogo={"/LinkedIn.svg"}
           />
         </div>
         <div className=" grid grid-flow-row-dense grid-cols-12 mt-8 p-2">
@@ -46,41 +44,27 @@ function AboutMeCard() {
               connect."
             </p>
           </div>
-          <div className="bg-primary-dark p-3 ring-2 ring-primaryText  lg:max-h-none col-start-2 col-span-10 md:col-start-10 md:col-span-3 rounded-md mx-5 md:my-0 mt-10 ">
+          <div className="bg-primary-dark pt-3 pb-1 px-3 ring-2 ring-primaryText  lg:max-h-none col-start-2 col-span-10 md:col-start-10 md:col-span-3 rounded-md mx-5 md:my-0 mt-10 ">
             <span className="text-lg text-primaryText absolute -translate-y-12">
               {"{Tech-Stack}"}
             </span>
-            <div className=" flex flex-wrap justify-evenly gap-4 mt-2">
-              <div className=" w-7">
-                <IconLink
-                  iconLogo={"/javascript.svg"}
-                  linkName={"JavaScript"}
-                />
-              </div>
-              <div className="w-8">
-                <IconLink iconLogo={"/HTML5.svg"} linkName={"HTML5"} />
-              </div>
-              <div className="w-8">
-                <IconLink iconLogo={"/Css3.svg"} linkName={"CSS3"} />
-              </div>
-              <div className="w-8">
-                <IconLink iconLogo={"/React-icon.svg"} linkName={"React"} />
-              </div>
-              <div className="w-8">
-                <IconLink
-                  iconLogo={"/Tailwind_logo.svg"}
-                  linkName={"Tailwind CSS"}
-                />
-              </div>
-              <div className="w-8">
-                <IconLink iconLogo={"/node_js.svg"} linkName={"Node JS"} />
-              </div>
-              <div className="w-8">
-                <IconLink
-                  iconLogo={"/mongodb-icon.svg"}
-                  linkName={"Mongo DB"}
-                />
-              </div>
+            <div className=" flex flex-wrap justify-evenly gap-4 text-lg">
+              <IconLink
+                linkName={"JavaScript"}
+                targetLink="https://www.javascript.com/"
+              />
+              <IconLink
+                linkName={"HTML5"}
+                targetLink="https://de.wikipedia.org/wiki/HTML5"
+              />
+              <IconLink
+                linkName={"CSS3"}
+                targetLink="https://en.wikipedia.org/wiki/CSS"
+              />
+              <IconLink linkName={"React"} targetLink="https://reactjs.org/" />
+              <IconLink linkName={"TailwindCss"} />
+              <IconLink linkName={"NodeJS"} />
+              <IconLink linkName={"MongoDB"} />
             </div>
           </div>
         </div>

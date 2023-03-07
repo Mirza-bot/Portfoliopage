@@ -6,7 +6,10 @@ function GreetingPage() {
   const softwareDeveloper = "{Software Developer}";
   return (
     <div className="primary_gradient sm:pt-10 pt-3">
-      <div className="grid grid-cols-10 grid-rows-6 mt-16 sm:m-10 m-2 ">
+      <div
+        id="grid_container"
+        className="grid grid-cols-10 grid-rows-6 sm:m-10 m-2"
+      >
         <a target="_self" href="/" className="col-start-1 hover:cursor-pointer">
           <svg
             width="57"
@@ -49,35 +52,35 @@ function GreetingPage() {
           </p>
         </div>
         <div className="text_style2 text-lg xl:col-span-3 xl:col-start-2  md:col-span-4 md:col-start-2 row-start-5 md:row-start-5 col-span-8 col-start-2 sm:mt-3">
-          <p>
+          <p className="font-thin">
             My passion for development drives creativity, satisfaction of
             solving complex problems with elegant solutions and constant
             improvement.
           </p>
         </div>
         <div className="sm:row-span-5 row-start-6 col-span-1 col-start-2">
-          <BasicBtn buttonName={"<explore/>"} alternative="" />
+          <BasicBtn buttonName={"<explore/>"} />
         </div>
         <div
           id="link_icons"
-          className="bg-primaryText absolute w-10 right-5 top-2/3 md_hidden leading-3 z-10 rounded-full"
+          className=" absolute right-5 top-2/3 md_hidden leading-3 z-10 rounded-full"
         >
-          <div className="bg-secondary-light p-1 rounded-full  m-1">
+          <div className=" rounded-full mb-1">
             <IconLink
               linkName={"LinkedIn"}
               targetLink={"http://linkedin.com/in/mirzamalkoc"}
-              iconLogo={"/LinkedIn.svg"}
+              addClass={"text-3xl"}
             />
           </div>
-          <div className="bg-secondary-light p-1 m-1 rounded-full">
+          <div className="rounded-full">
             <IconLink
-              linkName={"Github"}
+              linkName={"GitHub"}
               targetLink={"https://github.com/Mirza-bot"}
-              iconLogo={"/GitHub-Mark 1.svg"}
+              addClass={"text-3xl"}
             />
           </div>
         </div>
-        <div className="absolute style_vl pt-5 md_hidden"></div>
+        <div className="absolute style_vl md_hidden"></div>
       </div>
     </div>
   );
