@@ -43,7 +43,7 @@ function ProjectsPage() {
             />
           </div>
         </div>
-        <div className="mt-20">
+        <div className="mt-20 pb-20">
           <ContactBox />
         </div>
       </div>

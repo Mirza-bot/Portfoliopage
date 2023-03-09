@@ -1,0 +1,4 @@
+#nav_bg {
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}

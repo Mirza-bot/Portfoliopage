@@ -8,7 +8,7 @@ import IconLink from "../../buttons/IconLink";
 function AboutMeCard() {
   return (
     <>
-      <div className="ring-2 ring-primaryText sm:p-5 py-5 px-2">
+      <div className="ring-2 ring-primaryText sm:p-5 py-5 px-2 ">
         <span className=" text-3xl  text-primaryText">
           {"{"}About Me{"}"}
         </span>
