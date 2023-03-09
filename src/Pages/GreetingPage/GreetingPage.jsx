@@ -11,7 +11,7 @@ function GreetingPage() {
   return (
     <div className="primary_gradient sm:pt-10 pt-3 relative border-b-2 border-primaryText">
       <div id="grid_container" className="grid grid-cols-10 grid-rows-6 m-2">
-        <div className="col-start-2 md_displayed">
+        <div className="col-start-2 md_displayed ">
           <a target="_self" href="/" className=" hover:cursor-pointer ">
             <svg
               width="57"

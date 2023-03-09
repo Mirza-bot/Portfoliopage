@@ -28,19 +28,19 @@ function Navbar() {
             </svg>
           </a>
         </div>
-        <div className="flex gap-20 mt-1 text-white">
+        <div className="flex gap-20 mt-1 text-white ">
           <div className="p-5 ">
-            <span className="hover:cursor-pointer hover:text-primaryText md_hidden select-none ">
+            <span className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText md_hidden select-none ">
               About Me
             </span>
           </div>
           <div className="p-5">
-            <span className="hover:cursor-pointer hover:text-primaryText md_hidden select-none">
+            <span className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText md_hidden select-none">
               Projects
             </span>
           </div>
           <div className="p-5">
-            <span className=" hover:cursor-pointer hover:text-primaryText md_hidden select-none">
+            <span className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText md_hidden select-none">
               Contact
             </span>
           </div>
