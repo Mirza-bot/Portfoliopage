@@ -21,6 +21,10 @@ body {
   padding: 0;
 }
 
+.text_style1 {
+  font-family: "Source Code Pro", monospace;
+}
+
 .text_style2 {
   font-family: "Roboto", sans-serif;
 }
@@ -38,7 +42,7 @@ body {
 }
 
 .hover_scale {
-  transition: all 250ms ease-in-out 0s;
+  transition: all 200ms ease-in-out 0s;
 }
 
 .hover_scale:hover {

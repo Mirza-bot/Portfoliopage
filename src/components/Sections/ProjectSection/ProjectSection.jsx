@@ -2,9 +2,24 @@ import BasicBtn from "../../buttons/BasicBtn";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsDisplay } from "react-icons/bs";
 
-function ProjectSection({ projectName, projectText, projectImage, techStack }) {
+/**
+ *
+ * @param {string} projectName name of the project.
+ * @param {string} projectText a short description of the project.
+ * @param {string} projectImage a image of the project to present. (supports all formats for <img/> - tag.)
+ * @param {string} demoLink a link to the project url (to test it).
+ * @param {string} repoLink a link to the github repository.
+ * @returns 2 animated cards for the image and the description.
+ */
+function ProjectSection({
+  projectName,
+  projectText,
+  projectImage,
+  demoLink,
+  repoLink,
+}) {
   const buttonFill = (name) => {
-    if (name === "GitHub") {
+    if (name === "Code") {
       return (
         <div className="flex">
           <AiFillGithub className="mt-1 mr-2" />
@@ -35,24 +50,47 @@ function ProjectSection({ projectName, projectText, projectImage, techStack }) {
   };
 
   return (
-    <div className="lg:w-4/5 2xl:w-1/2 mx-auto grid grid-cols-12 mt-20">
-      <div className=" -translate-y-20 -translate-x-14 bg-primary-light text-white pb-4 px-4 pt-2 z-10 col-span-3 row-span-3 row-start-2 col-start-9">
-        <p className="shadow-3xl -translate-x-14 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-center w-max py-1 px-2">
-          JobApplication Manager
-        </p>
-        <p className="text_style2 font-thin">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit excepturi
-          inventore deserunt facere ducimus. Obcaecati expedita voluptas
-          distinctio quisquam magnam labore officia, tenetur ipsa, quod tempora
-          corrupti aspernatur aperiam vel!
-        </p>
-        <div className="flex justify-between  lg:mx-4  ">
-          <BasicBtn buttonName={buttonFill("Demo")} alternative={true} />
-          <BasicBtn buttonName={buttonFill("GitHub")} alternative={true} />
+    <div className="md:w-3/5 lg:w-4/5 mx-auto my-16 md:my-32 relative">
+      <div className="md:translate-x-5 mx-auto w-4/5 lg:pt-32 xl:pt0 ">
+        <img
+          className="select-none lg:brightness-50 lg:hover:brightness-100 lg:w-4/5 lg:hover:ring-2 hover:cursor-pointer lg:ring-primaryText lg:hover:scale-105 transition-all ease-out duration-300"
+          onMouseEnter={(e) => {
+            e.target.parentElement.lastChild.classList.toggle(
+              "lg:translate-x-20"
+            );
+          }}
+          onMouseLeave={(e) => {
+            e.target.parentElement.lastChild.classList.toggle(
+              "lg:translate-x-20"
+            );
+            e.target.classList.remove("lg:w-full");
+            e.target.parentElement.lastChild.classList.remove("lg:opacity-0");
+          }}
+          onClick={(e) => {
+            e.target.classList.toggle("lg:w-full");
+            e.target.parentElement.lastChild.classList.toggle("lg:opacity-0");
+          }}
+          src={projectImage}
+          alt={projectName}
+        />
+        <div className=" lg:absolute lg:-bottom-20 lg:-right-20 bg-primary-light text-white pb-4 px-4 pt-2 z-10  lg:max-w-xs transition-all ease-out duration-300">
+          <p className="shadow-3xl lg:-translate-x-14 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-center w-max py-1 px-2">
+            {projectName}
+          </p>
+          <p className="text_style2 font-thin mb-2">{projectText}</p>
+          <div className="flex justify-between mx-6 md:mx-16 lg:mx-6">
+            <BasicBtn
+              buttonName={buttonFill("Demo")}
+              btnLink={demoLink}
+              alternative={true}
+            />
+            <BasicBtn
+              buttonName={buttonFill("Code")}
+              btnLink={repoLink}
+              alternative={true}
+            />
+          </div>
         </div>
-      </div>
-      <div className="translate-x-20 col-start-2 row-span-3 col-span-7">
-        <img src={projectImage} alt="sadsads" />
       </div>
     </div>
   );

@@ -7,8 +7,8 @@ module.exports = {
     "./src/Pages/ProjectsPage/ProjectsPage.jsx",
     "./src/components/buttons/BasicBtn.jsx",
     "./src/components/buttons/IconLink.jsx",
-    "./src/components/Cards/ProjectCard/ProjectCard.jsx",
     "./src/components/Sections/ProjectSection/ProjectSection.jsx",
+    "./src/components/ContactBox/ContactBox.jsx",
   ],
   theme: {
     colors: {

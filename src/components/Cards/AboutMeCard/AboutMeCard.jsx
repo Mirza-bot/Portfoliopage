@@ -1,14 +1,18 @@
 import "./styles.css";
 import IconLink from "../../buttons/IconLink";
 
+/**
+ * A component to tell a bit about myself.
+ * @returns a card with a max-vh width
+ */
 function AboutMeCard() {
   return (
     <>
-      <div className="ring-2 ring-primaryText p-5">
-        <span className=" text-3xl  text-gray">
+      <div className="ring-2 ring-primaryText sm:p-5 py-5 px-2">
+        <span className=" text-3xl  text-primaryText">
           {"{"}About Me{"}"}
         </span>
-        <div className="portrait:md_displayed md_displayed float-right flex justify-between text-2xl w-16 ">
+        <div className="portrait:md_displayed md_displayed float-right flex justify-between text-2xl sm:w-16 w-20 ">
           <IconLink
             linkName={"GitHub"}
             targetLink={"https://github.com/Mirza-bot"}
@@ -16,6 +20,7 @@ function AboutMeCard() {
           <IconLink
             linkName={"LinkedIn"}
             targetLink={"http://linkedin.com/in/mirzamalkoc"}
+            addClass={"mr-3"}
           />
         </div>
         <div className=" grid grid-flow-row-dense grid-cols-12 mt-8 p-2">
@@ -32,7 +37,7 @@ function AboutMeCard() {
             </div>
           </div>
           <div className="col-start-2 col-span-10 md:col-start-4 md:col-span-6 lg:col-start-3 lg:col-span-7 row-span-6 lg:ml-5">
-            <p className="p-5 md:py-0 mt-5 sm:mt-0 text_style2 text-white text-lg">
+            <p className="py-5 md:px-5 md:py-0 mt-5 sm:mt-0 text_style2 text-white text-lg">
               "I'm a passionate software developer from Austria seeking new
               opportunities to build innovative solutions that enhance clients'
               experience.

@@ -9,9 +9,18 @@ import {
   SiNodedotjs,
 } from "react-icons/si";
 
+/**
+ *
+ * @param {string} targetLink a link connect it to the button which opens a new tab to the dedicated site.
+ * @param {string} linkName the name of the link which gets displayed inside the button.
+ * @param {string} addClass to add a class inline from the component tag.
+ * @returns
+ */
 function IconLink({ targetLink, linkName, addClass }) {
   const icon = (iconName) => {
     const style = "hover_scale select-none " + addClass;
+
+    /* A switch case that returns the icon depending on the name and displays it inside the button  */
     switch (iconName) {
       case "GitHub": {
         return <AiFillGithub className={style} />;

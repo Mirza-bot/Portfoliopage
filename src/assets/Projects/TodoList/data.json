@@ -1,0 +1,13 @@
+{
+    "data": {
+        "de": {
+            "name": "Kanban-Board",
+            "description": "Eine Web-App welche mittels JavaScript, Vue3, Vue-Router und VueX erstellt wurde. Als Backend wird Firebase mit ihrer Realtime-Database genutzt, dies ermöglicht Authentifizierungsfunktionen und das Speichern der eigenen Aufgaben als Karten, für jeden Nutzer der sich registriert. Mittels der 'Drag & Drop'-API können die Karten zwischen den einzelnen Kategorien verschoben werden. Das Löschen und Editieren der Karten ist ebenfalls möglich."
+        },
+        "en": {
+            "name": "Kanban-Board",
+            "description": "A web app created using JavaScript, Vue3, Vue-Router, and VueX. Firebase with their Realtime Database is used as the backend, allowing authentication functions and the saving of users' own tasks as cards for each registered user. Using the 'Drag & Drop' API, the cards can be moved between the different categories. Deleting and editing the cards is also possible."
+        },
+        "techStack": "HTML5, CSS3, JavaScript, Vue.js, Firebase"
+    }
+}

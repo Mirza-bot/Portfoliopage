@@ -2,14 +2,15 @@ import "./styles.css";
 import BasicBtn from "../../components/buttons/BasicBtn";
 import IconLink from "../../components/buttons/IconLink";
 
+/**
+ *
+ * @returns the first seen page of the website
+ */
 function GreetingPage() {
   const softwareDeveloper = "{Software Developer}";
   return (
     <div className="primary_gradient sm:pt-10 pt-3">
-      <div
-        id="grid_container"
-        className="grid grid-cols-10 grid-rows-6 sm:m-10 m-2"
-      >
+      <div id="grid_container" className="grid grid-cols-10 grid-rows-6 m-2">
         <a target="_self" href="/" className="col-start-1 hover:cursor-pointer">
           <svg
             width="57"
@@ -47,7 +48,7 @@ function GreetingPage() {
         </div>
         <div className="xl:col-span-4 xl:col-start-2 md:col-span-7 md:col-start-2 sm:col-start-2 col-start-2 row-start-4 col-span-10">
           <p className="text-4xl sm:text-6xl font-semibold ">Malkoc Mirza</p>
-          <p className="text-2xl sm:text-3xl text-gray mt-3 tracking-tighter">
+          <p className="text-2xl sm:text-3xl text-primaryText mt-3 tracking-tighter">
             {softwareDeveloper}
           </p>
         </div>
@@ -59,7 +60,7 @@ function GreetingPage() {
           </p>
         </div>
         <div className="sm:row-span-5 row-start-6 col-span-1 col-start-2">
-          <BasicBtn buttonName={"<explore/>"} />
+          <BasicBtn buttonName={"<explore/>"} addClass={"sm:mt-5 mt-8"} />
         </div>
         <div
           id="link_icons"

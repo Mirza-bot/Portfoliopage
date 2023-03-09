@@ -1,0 +1,13 @@
+{
+    "data": {
+        "de": {
+            "name": "Pixelart Zeichenbrett",
+            "description": "Ein Zeichenbrett mit Raster welches mit JavaScript, HTML und CSS gemacht wurde. Es diente als gute Übung dieses Projekt ohne Framework zu erstellen."
+        },
+        "en": {
+            "name": "Pixelart Drawingboard",
+            "description": "A drawing board with a grid that was made with JavaScript, HTML, and CSS. It served as a good exercise to create this project without a framework."
+        },
+        "techStack": "HTML5, CSS3, JavaScript"
+    }
+}
