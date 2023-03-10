@@ -3,10 +3,12 @@ module.exports = {
   content: [
     "./index.html.html",
     "./src/components/Navbar/Navbar.jsx",
+    "./src/components/Sections/MobileMenu/MobileMenu.jsx",
     "./src/Pages/GreetingPage/GreetingPage.jsx",
     "./src/components/Cards/AboutMeCard/AboutMeCard.jsx",
     "./src/Pages/ProjectsPage/ProjectsPage.jsx",
     "./src/components/buttons/BasicBtn.jsx",
+    "./src/components/buttons/LinkBtn.jsx",
     "./src/components/buttons/IconLink.jsx",
     "./src/components/Sections/ProjectSection/ProjectSection.jsx",
     "./src/components/ContactBox/ContactBox.jsx",

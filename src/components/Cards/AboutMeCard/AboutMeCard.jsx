@@ -8,7 +8,10 @@ import IconLink from "../../buttons/IconLink";
 function AboutMeCard() {
   return (
     <>
-      <div className="border-b-2 border-primaryText sm:p-5 py-5 px-2 ">
+      <div
+        id="about"
+        className="border-b-2 border-primaryText sm:p-5 py-5 px-2 "
+      >
         <div className=" md:w-4/5 mx-auto">
           <span className=" text-3xl  text-primaryText">
             {"{"}About Me{"}"}
@@ -70,9 +73,18 @@ function AboutMeCard() {
                   linkName={"React"}
                   targetLink="https://reactjs.org/"
                 />
-                <IconLink linkName={"TailwindCss"} />
-                <IconLink linkName={"NodeJS"} />
-                <IconLink linkName={"MongoDB"} />
+                <IconLink
+                  linkName={"TailwindCss"}
+                  targetLink="https://tailwindcss.com/"
+                />
+                <IconLink
+                  linkName={"NodeJS"}
+                  targetLink="https://nodejs.org/"
+                />
+                <IconLink
+                  linkName={"MongoDB"}
+                  targetLink="https://www.mongodb.com/"
+                />
               </div>
             </div>
           </div>

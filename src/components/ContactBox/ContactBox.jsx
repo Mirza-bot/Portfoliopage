@@ -7,7 +7,10 @@ import BasicBtn from "../buttons/BasicBtn";
  */
 function ContactBox() {
   return (
-    <div className="bg-primary-dark ring-2 ring-primaryText  sm:w-3/5 mx-auto sm:rounded-md flex flex-col items-center pt-5 sm:pb-10 px-10">
+    <div
+      id="contact"
+      className=" bg-primary-dark ring-2 ring-primaryText  sm:w-3/5 mx-auto sm:rounded-md flex flex-col items-center pt-5 sm:pb-10 px-10 mt-60 sm:mb-32"
+    >
       <p className="text-3xl text-center mb-10 text-primaryText">
         {"{Contact Me}"}
       </p>

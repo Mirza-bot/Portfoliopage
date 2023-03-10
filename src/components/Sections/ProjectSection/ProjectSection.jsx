@@ -1,4 +1,4 @@
-import BasicBtn from "../../buttons/BasicBtn";
+import LinkBtn from "../../buttons/LinkBtn";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsDisplay } from "react-icons/bs";
 
@@ -79,12 +79,12 @@ function ProjectSection({
           </p>
           <p className="text_style2 font-thin mb-2">{projectText}</p>
           <div className="flex justify-between mx-6 md:mx-16 lg:mx-6">
-            <BasicBtn
+            <LinkBtn
               buttonName={buttonFill("Demo")}
               btnLink={demoLink}
               alternative={true}
             />
-            <BasicBtn
+            <LinkBtn
               buttonName={buttonFill("Code")}
               btnLink={repoLink}
               alternative={true}

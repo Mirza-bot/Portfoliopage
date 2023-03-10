@@ -1,12 +1,10 @@
 import ProjectSection from "../../components/Sections/ProjectSection/ProjectSection";
-import ContactBox from "../../components/ContactBox/ContactBox";
 import JAM_Img from "/src/assets/Projects/JAM/JobApplicationManager.gif";
 import JAM_Data from "/src/assets/Projects/JAM/data.json";
 import PADB_Img from "/src/assets/Projects/PA-Drawingboard/PixelArtDB.png";
 import PADB_Data from "/src/assets/Projects/PA-Drawingboard/data.json";
 import Kanban_Img from "/src/assets/Projects/TodoList/kanban.webp";
 import Kanban_Data from "/src/assets/Projects/TodoList/data.json";
-import "./styles.css";
 
 /**
  *
@@ -15,7 +13,7 @@ import "./styles.css";
 function ProjectsPage() {
   return (
     <>
-      <div className="page_container">
+      <div id="work">
         <div className=" relative">
           <div className="bg-primary-light p-5 md:w-fit md:absolute md:top-20 md:left-1/4">
             <p className="text-primaryText text-3xl select-none">
@@ -30,14 +28,14 @@ function ProjectsPage() {
                 projectText={JAM_Data.data.de.description}
               />
             </div>
-            <div className="animate-[levitation_2s_0.2s_ease-in-out_infinite]">
+            <div className="animate-[levitation_2s_0.3s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={PADB_Img}
                 projectName={PADB_Data.data.de.name}
                 projectText={PADB_Data.data.de.description}
               />
             </div>
-            <div className="animate-[levitation_2s_0.4s_ease-in-out_infinite]">
+            <div className="animate-[levitation_2s_0.6s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={Kanban_Img}
                 projectName={Kanban_Data.data.de.name}
@@ -45,9 +43,6 @@ function ProjectsPage() {
               />
             </div>
           </div>
-        </div>
-        <div className="mt-40 sm:pb-20">
-          <ContactBox />
         </div>
       </div>
     </>
