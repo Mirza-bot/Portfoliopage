@@ -7,11 +7,11 @@ import BasicBtn from "../buttons/BasicBtn";
  */
 function ContactBox() {
   return (
-    <div className="bg-primary-light ring-2 ring-primaryText w-4/5 sm:w-3/5 mx-auto rounded-md flex flex-col items-center pt-5 pb-10 px-10">
+    <div className="bg-primary-dark ring-2 ring-primaryText  sm:w-3/5 mx-auto sm:rounded-md flex flex-col items-center pt-5 sm:pb-10 px-10">
       <p className="text-3xl text-center mb-10 text-primaryText">
         {"{Contact Me}"}
       </p>
-      <form className="flex flex-col gap-4 w-full mb-5">
+      <form className="flex flex-col gap-4 w-full mb-5 text_style2">
         <input
           placeholder="Name"
           className="bg-secondary-light ring-1 ring-primaryText rounded-sm pl-2"
@@ -29,7 +29,11 @@ function ContactBox() {
           rows="10"
         ></textarea>
       </form>
-      <BasicBtn buttonName={"Send"} alternative="true" addClass={""} />
+      <BasicBtn
+        buttonName={"Send"}
+        alternative={false}
+        addClass={"mb-10 sm:mb-0"}
+      />
     </div>
   );
 }

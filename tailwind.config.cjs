@@ -34,6 +34,11 @@ module.exports = {
       boxShadow: {
         "3xl": "-5px 5px 6px 0px rgba(0, 0, 0, 0.458);",
       },
+      keyframes: {
+        levitation: {
+          "50%": { transform: "translateY(0.4rem)" },
+        },
+      },
     },
   },
   plugins: [],
