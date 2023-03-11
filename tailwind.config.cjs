@@ -2,6 +2,7 @@
 module.exports = {
   content: [
     "./index.html.html",
+    "./src/App.jsx",
     "./src/components/Navbar/Navbar.jsx",
     "./src/components/Sections/MobileMenu/MobileMenu.jsx",
     "./src/Pages/GreetingPage/GreetingPage.jsx",
@@ -39,6 +40,11 @@ module.exports = {
       keyframes: {
         levitation: {
           "50%": { transform: "translateY(0.4rem)" },
+        },
+        openMenu: {
+          "0%": { transform: "scale(0)" },
+          "50%": { transform: "scale(1.2)" },
+          "100%": { transform: "scale(1)" },
         },
       },
     },

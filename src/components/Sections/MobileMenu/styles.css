@@ -1,17 +1,5 @@
-.mobile_menu {
-  z-index: 50;
-  max-height: 100vh;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  transition: all 1s linear;
-}
-
-.mobile_menu_hidden {
-  max-height: 100vh;
-  display: none;
-  -webkit-transition: all 1s linear;
-  -moz-transition: all 1s linear;
-  -o-transition: all 1s linear;
-  transition: all 1s linear;
+.mobile_nav_bg {
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  height: 100vh;
 }

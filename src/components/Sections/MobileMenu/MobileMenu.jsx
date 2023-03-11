@@ -1,43 +1,38 @@
-import "./styles.css";
 import { Link } from "react-scroll";
 import IconLink from "../../buttons/IconLink";
-function MobileMenu({ showMenu, toggleMenu }) {
-  const menuVisibility = () => {
-    if (showMenu !== true) {
-      return "mobile_menu ";
-    } else return "mobile_menu_hidden";
-  };
-
+import "./styles.css";
+function MobileMenu({ toggle, setToggle }) {
   return (
     <div
       className={
-        menuVisibility() + " max-w-screen-sm transition-all duration-100"
+        (toggle ? "" : "-translate-y-full") +
+        " mobile_nav_bg absolute top-0 left-0 w-full bg-secondary-light  transition-all duration-500 border-b-2 border-primaryText"
       }
     >
-      <div className="w-10 absolute  right-7 top-5  text-primaryText"></div>
-      <div className="items-center mx-auto pt-32 flex flex-col w-3/4 max-w-screen-sm gap-10 justify-center text-white transition-all duration-200">
-        <div className="flex  mx-auto justify-between">
+      <div className="text-primaryText absolute right-6 top-4"></div>
+      <div className="items-center mx-auto pt-32 flex flex-col w-3/4 max-w-screen-sm gap-10 justify-center text-white">
+        <div className="flex justify-between w-24">
           <IconLink
             linkName={"GitHub"}
-            addClass={"text-4xl text-white"}
+            addClass={"text-4xl text-white hover:text-primaryText"}
             targetLink={"https://github.com/Mirza-bot"}
           />
           <IconLink
             linkName={"LinkedIn"}
-            addClass={"text-4xl text-white"}
+            addClass={"text-4xl text-white hover:text-primaryText"}
             targetLink={"http://linkedin.com/in/mirzamalkoc"}
           />
         </div>
         <div className="p-5 text-2xl">
           <Link
             onClick={() => {
-              toggleMenu();
+              setToggle(!toggle);
             }}
             activeClass="underline text-primaryText"
             to="about"
             spy={true}
             smooth={true}
-            offset={-600}
+            offset={-70}
             duration={500}
             className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText select-none "
           >
@@ -47,13 +42,13 @@ function MobileMenu({ showMenu, toggleMenu }) {
         <div className="p-5 text-2xl">
           <Link
             onClick={() => {
-              toggleMenu();
+              setToggle(!toggle);
             }}
             activeClass="underline text-primaryText"
             to="work"
             spy={true}
             smooth={true}
-            offset={-600}
+            offset={-70}
             duration={500}
             className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText select-none"
           >
@@ -63,13 +58,13 @@ function MobileMenu({ showMenu, toggleMenu }) {
         <div className="p-5 text-2xl">
           <Link
             onClick={() => {
-              toggleMenu();
+              setToggle(!toggle);
             }}
             activeClass="underline text-primaryText"
             to="contact"
             spy={true}
             smooth={true}
-            offset={-600}
+            offset={-130}
             duration={500}
             className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText  select-none"
           >

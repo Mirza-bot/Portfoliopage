@@ -8,6 +8,10 @@
   max-height: 95vh;
 }
 
+#link_icons {
+  height: 6vh;
+}
+
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
   .primary_gradient {
     height: 200vh;
@@ -27,8 +31,8 @@
   right: 2.1rem;
 }
 
-@media screen and (max-height: 900px) {
+@media screen and (max-height: 1100px) {
   #link_icons {
-    transform: translateY(-1vh);
+    transform: translateY(-2vh);
   }
 }
