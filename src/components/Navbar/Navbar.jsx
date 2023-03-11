@@ -57,7 +57,7 @@ function Navbar() {
                 to="work"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-100}
                 duration={500}
                 className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText select-none"
               >

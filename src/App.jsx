@@ -3,8 +3,8 @@ import Navbar from "./components/Navbar/Navbar";
 import GreetingPage from "./Pages/GreetingPage/GreetingPage";
 import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";
 import Footer from "./components/Footer/Footer";
-import AboutMeCard from "./components/Cards/AboutMeCard/AboutMeCard";
-import ContactBox from "./components/ContactBox/ContactBox";
+import AboutMeBox from "./components/Sections/AboutMeBox/AboutMeBox";
+import ContactBox from "./components/Sections/ContactBox/ContactBox";
 import MobileMenu from "./components/Sections/MobileMenu/MobileMenu";
 import { Spin as Hamburger } from "hamburger-react";
 import { useEffect, useState } from "react";
@@ -37,7 +37,7 @@ function App() {
       </div>
       <div className="page_container1">
         <GreetingPage />
-        <AboutMeCard />
+        <AboutMeBox />
       </div>
       <div className="page_container2">
         <ProjectsPage />

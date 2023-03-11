@@ -5,16 +5,16 @@
  * @param {string} addClass takes css classes inline from the component tag to effect the component.
  * @returns
  */
-function BasicBtn({ buttonName, alternative, addClass }) {
-  return !alternative ? (
+function BasicBtn({ buttonName, alternative, addClass, type }) {
+  const style1 = ` bg-primary-dark  hover:bg-primary-light active:bg-secondary-light `;
+  const style2 = ` bg-secondary-dark hover:bg-secondary-light active:bg-primary-light `;
+
+  return (
     <button
-      className={` text_style1 text-primaryText font-semibold select-none rounded-lg mt-2 px-3 py-2 ${addClass} bg-primary-dark  hover:bg-primary-light active:bg-secondary-light active:border-primaryText active:ring-2 ring-primaryText transition-all ease-in-out duration-150`}
-    >
-      {buttonName}
-    </button>
-  ) : (
-    <button
-      className={`text_style1 text-primaryText font-semibold select-none rounded-lg mt-2 px-3 py-2 ${addClass} bg-secondary-dark hover:bg-secondary-light active:bg-primary-light active:border-primaryText active:ring-2 ring-primaryText transition-all ease-in-out duration-150`}
+      type={type}
+      className={`${
+        !alternative ? style1 : style2
+      }  ${addClass} text_style1 text-primaryText font-semibold select-none rounded-lg mt-2 px-3 py-2 active:border-primaryText active:ring-2 ring-primaryText transition-all ease-in-out duration-150`}
     >
       {buttonName}
     </button>
