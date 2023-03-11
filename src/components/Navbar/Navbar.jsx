@@ -1,12 +1,12 @@
 import "./styles.css";
 import { Link } from "react-scroll";
 
-function Navbar({ setToggle }) {
+function Navbar() {
   return (
     <div>
       <div
         id="nav_bg"
-        className="h-20 py-3 flex justify-between border-b-2 border-primaryText  bg-primary-dark"
+        className=" h-20 py-3 flex justify-between border-b-2 border-primaryText  bg-primary-dark"
       >
         <div className=" pl-5 w-32 ">
           <Link
@@ -70,7 +70,7 @@ function Navbar({ setToggle }) {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-180}
+                offset={-350}
                 duration={500}
                 className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText  select-none"
               >

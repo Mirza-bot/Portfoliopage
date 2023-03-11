@@ -8,6 +8,10 @@
             "name": "Jobapplication Manager",
             "description": "This application was made with Tauri, a toolkit for developing native desktop applications with JavaScript frontend frameworks. It creates a webview application that behaves like a browser but allows us to use native functions such as accessing the file system. Rust is used as the backend and Tao/Wry is used to create the window and the webview."
         },
-        "techStack": "HTML5, CSS3, JavaScript, React, TailwindCSS"
+        "techStack": "HTML5, CSS3, JavaScript, React, TailwindCSS",
+        "link": {
+            "demo": "https://pixelartdrawingboard.web.app",
+            "repo": "https://github.com/Mirza-bot/Job-Application-Manager/tree/master/job_application_manager"
+        }
     }
 }

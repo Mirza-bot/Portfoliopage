@@ -13,7 +13,7 @@ function AboutMeCard() {
         className="border-b-2 border-primaryText sm:p-5 py-5 px-2 "
       >
         <div className=" md:w-4/5 mx-auto">
-          <span className=" text-3xl  text-primaryText">
+          <span className=" text-3xl select-none  text-primaryText">
             {"{"}About Me{"}"}
           </span>
           <div className="portrait:md_displayed md_displayed float-right flex justify-between text-3xl sm:w-26 w-20  mr-3">
@@ -30,7 +30,7 @@ function AboutMeCard() {
             <div className="col-span-10 col-start-2 lg:row-span-2 md:row-span-3 md:col-start-1 md:col-span-4 md:row-start-1 md:mr-3 md:max-h-44">
               <div
                 id="avatar"
-                className="bg-primary-dark ring-2 ring-primaryText rounded-xl avatar_img_min_size flex justify-center mx-auto"
+                className="bg-primary-dark select-none ring-2 ring-primaryText rounded-xl avatar_img_min_size flex justify-center mx-auto"
               >
                 <img
                   className=" max-h-44 avatar_img_max_size"

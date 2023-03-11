@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 function App() {
   const [toggle, setToggle] = useState(false);
 
+  /** Checks for the toggle state of the mobile menu and prevents scrolling if mobile menu is open  */
   useEffect(() => {
     if (toggle === true) {
       document.body.classList.add(`overflow-hidden`);
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div className="sticky top-0 z-40">
+      <div className={"sticky top-0 z-40 select-none"}>
         <div
           className="md:hidden absolute z-50 right-5 top-5 text-primaryText"
           onClick={() => {

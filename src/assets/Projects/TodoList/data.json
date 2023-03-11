@@ -8,6 +8,10 @@
             "name": "Kanban-Board",
             "description": "A web app created using JavaScript, Vue3, Vue-Router, and VueX. Firebase with their Realtime Database is used as the backend, allowing authentication functions and the saving of users' own tasks as cards for each registered user. Using the 'Drag & Drop' API, the cards can be moved between the different categories. Deleting and editing the cards is also possible."
         },
-        "techStack": "HTML5, CSS3, JavaScript, Vue.js, Firebase"
+        "techStack": "HTML5, CSS3, JavaScript, Vue.js, Firebase",
+        "link": {
+            "demo": "https://kanban-board-91d98.web.app",
+            "repo": "https://github.com/Mirza-bot/Kanban-board/tree/main/kanban-board"
+        }
     }
 }

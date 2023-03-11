@@ -33,6 +33,8 @@ function ProjectsPage() {
                 projectImage={PADB_Img}
                 projectName={PADB_Data.data.de.name}
                 projectText={PADB_Data.data.de.description}
+                demoLink={PADB_Data.data.link.demo}
+                repoLink={PADB_Data.data.link.repo}
               />
             </div>
             <div className="animate-[levitation_2s_0.6s_ease-in-out_infinite]">
@@ -40,6 +42,8 @@ function ProjectsPage() {
                 projectImage={Kanban_Img}
                 projectName={Kanban_Data.data.de.name}
                 projectText={Kanban_Data.data.de.description}
+                demoLink={Kanban_Data.data.link.demo}
+                repoLink={Kanban_Data.data.link.repo}
               />
             </div>
           </div>

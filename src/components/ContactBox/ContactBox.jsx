@@ -9,12 +9,12 @@ function ContactBox() {
   return (
     <div
       id="contact"
-      className=" bg-primary-dark ring-2 ring-primaryText  sm:w-3/5 mx-auto sm:rounded-md flex flex-col items-center pt-5 sm:pb-10 px-10 mt-60 sm:mb-32"
+      className=" bg-primary-dark border-t-2 border-primaryText flex flex-col items-center pt-5 sm:pb-10 px-10 mt-60 "
     >
-      <p className="text-3xl text-center mb-10 text-primaryText">
+      <p className="select-none text-3xl text-center mb-10 text-primaryText">
         {"{Contact Me}"}
       </p>
-      <form className="flex flex-col gap-4 w-full mb-5 text_style2">
+      <form className="flex flex-col gap-4 w-3/4 mb-5 text_style2">
         <input
           placeholder="Name"
           className="bg-secondary-light ring-1 ring-primaryText rounded-sm pl-2"

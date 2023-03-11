@@ -8,6 +8,10 @@
             "name": "Pixelart Drawingboard",
             "description": "A drawing board with a grid that was made with JavaScript, HTML, and CSS. It served as a good exercise to create this project without a framework."
         },
-        "techStack": "HTML5, CSS3, JavaScript"
+        "techStack": "HTML5, CSS3, JavaScript",
+        "link": {
+            "demo": "https://pixelartdrawingboard.web.app",
+            "repo": "https://github.com/Mirza-bot/PixelArtDB"
+        }
     }
 }
