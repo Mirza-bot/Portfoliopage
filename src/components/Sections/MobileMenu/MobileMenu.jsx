@@ -34,6 +34,7 @@ function MobileMenu({ toggle, setToggle }) {
             smooth={true}
             offset={-70}
             duration={500}
+            href="/about"
             className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText select-none "
           >
             About Me
@@ -50,6 +51,7 @@ function MobileMenu({ toggle, setToggle }) {
             smooth={true}
             offset={-70}
             duration={500}
+            href="/projects"
             className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText select-none"
           >
             Projects
@@ -66,6 +68,7 @@ function MobileMenu({ toggle, setToggle }) {
             smooth={true}
             offset={-130}
             duration={500}
+            href="/contact"
             className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText  select-none"
           >
             Contact

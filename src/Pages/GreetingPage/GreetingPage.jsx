@@ -36,6 +36,7 @@ function GreetingPage() {
             smooth={true}
             offset={-70}
             duration={500}
+            href="/projects"
             className=" hover:cursor-pointer"
           >
             <BasicBtn buttonName={"<explore/>"} addClass={"sm:mt-5 mt-8"} />

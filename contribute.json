@@ -1,0 +1,21 @@
+{
+    "name": "Malkoc Mirza's Portfolio",
+    "description": "My Personal portfolio that shows my work.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Mirza-bot/Portfoliopage"
+    },
+    "bugs": {
+        "url": "https://github.com/Mirza-bot/Portfoliopage/issues"
+    },
+    "keywords": [
+        "React",
+        "web app"
+    ],
+    "contributors": [
+        {
+            "name": "Malkoc Mirza",
+            "email": "ausgegeben.chat-0w@icloud.com"
+        }
+    ]
+}

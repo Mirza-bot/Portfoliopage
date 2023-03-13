@@ -7,6 +7,7 @@ import { BsDisplay } from "react-icons/bs";
  * @param {string} projectName name of the project.
  * @param {string} projectText a short description of the project.
  * @param {string} projectImage a image of the project to present. (supports all formats for <img/> - tag.)
+ * @param {string} projectVideo a video of the project to present. (webM preferred)
  * @param {string} demoLink a link to the project url (to test it).
  * @param {string} repoLink a link to the github repository.
  * @returns 2 animated cards for the image and the description.
@@ -17,6 +18,7 @@ function ProjectSection({
   projectImage,
   demoLink,
   repoLink,
+  projectVideo,
 }) {
   const buttonFill = (name) => {
     if (name === "Code") {

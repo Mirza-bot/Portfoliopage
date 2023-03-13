@@ -1,5 +1,6 @@
 import ProjectSection from "../../components/Sections/ProjectSection/ProjectSection";
 import JAM_Img from "/src/assets/Projects/JAM/JobApplicationManager.gif";
+import JAM_Vid from "/src/assets/Projects/JAM/JAM.webm";
 import JAM_Data from "/src/assets/Projects/JAM/data.json";
 import PADB_Img from "/src/assets/Projects/PA-Drawingboard/PixelArtDB.png";
 import PADB_Data from "/src/assets/Projects/PA-Drawingboard/data.json";
@@ -27,15 +28,16 @@ function ProjectsPage() {
             <div className="animate-[levitation_2s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={JAM_Img}
-                projectName={JAM_Data.data.de.name}
-                projectText={JAM_Data.data.de.description}
+                projectVideo={JAM_Vid}
+                projectName={JAM_Data.data.en.name}
+                projectText={JAM_Data.data.en.description}
               />
             </div>
             <div className="animate-[levitation_2s_0.3s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={PADB_Img}
-                projectName={PADB_Data.data.de.name}
-                projectText={PADB_Data.data.de.description}
+                projectName={PADB_Data.data.en.name}
+                projectText={PADB_Data.data.en.description}
                 demoLink={PADB_Data.data.link.demo}
                 repoLink={PADB_Data.data.link.repo}
               />
@@ -43,8 +45,8 @@ function ProjectsPage() {
             <div className="animate-[levitation_2s_0.6s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={Kanban_Img}
-                projectName={Kanban_Data.data.de.name}
-                projectText={Kanban_Data.data.de.description}
+                projectName={Kanban_Data.data.en.name}
+                projectText={Kanban_Data.data.en.description}
                 demoLink={Kanban_Data.data.link.demo}
                 repoLink={Kanban_Data.data.link.repo}
               />

@@ -15,7 +15,8 @@ function Navbar() {
             smooth={true}
             offset={-70}
             duration={500}
-            className=" hover:cursor-pointer "
+            className=" hover:cursor-pointer  "
+            href="/"
           >
             <svg
               width="57"
@@ -23,6 +24,7 @@ function Navbar() {
               viewBox="0 0 57 55"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
+              className="hover:scale-105 transition-all duration-200"
             >
               <path
                 d="M56 27.5C56 42.6878 43.464 55 28 55C12.536 55 0 42.6878 0 27.5C0 12.3122 12.536 0 28 0C43.464 0 56 12.3122 56 27.5Z"
@@ -46,6 +48,7 @@ function Navbar() {
                 smooth={true}
                 offset={-95}
                 duration={500}
+                href="/about"
                 className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText select-none "
               >
                 About Me
@@ -59,6 +62,7 @@ function Navbar() {
                 smooth={true}
                 offset={-100}
                 duration={500}
+                href="/projects"
                 className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText select-none"
               >
                 Projects
@@ -72,6 +76,7 @@ function Navbar() {
                 smooth={true}
                 offset={-350}
                 duration={500}
+                href="/contact"
                 className="transition-all duration-200 hover:cursor-pointer hover:text-primaryText  select-none"
               >
                 Contact
