@@ -37,7 +37,7 @@ function ContactBox() {
   return (
     <div id="contact">
       {success ? (
-        <div className="bg-primary-dark border-t-2 border-primaryText flex flex-col items-center py-32 mt-60">
+        <div className="bg-primary-dark border-t-2 border-primaryText flex flex-col items-center py-32 mt-60 px-10">
           <h3 className="select-none text-3xl text-center mb-10 text-primaryText">
             {"{Thank You}"}
           </h3>
@@ -51,8 +51,8 @@ function ContactBox() {
           </p>
         </div>
       ) : (
-        <div className=" bg-primary-dark border-t-2 border-primaryText flex flex-col items-center pt-5 sm:pb-10 px-10 mt-60 ">
-          <h3 className="select-none text-3xl text-center mb-10 text-primaryText">
+        <div className=" bg-primary-dark border-t-2 border-primaryText flex flex-col items-center pt-5 sm:pb-10 sm:px-10 mt-60 ">
+          <h3 className="select-none text-3xl text-center sm:mb-10 mb-5 text-primaryText">
             {"{Contact Me}"}
           </h3>
           <form
@@ -60,10 +60,15 @@ function ContactBox() {
               e.preventDefault();
               sendData();
             }}
-            action="https://form.taxi/s/g4xknwz9"
-            method="POST"
+            action="none"
             className="flex flex-col items-center gap-4 w-3/4 mb-5 text_style2 text-white"
           >
+            <p className="text_style2 text-primaryText py-2 bg-secondary-light p-3 rounded-md sm:mb-5 mb-3">
+              If you're interested in discussing your next software development
+              project or want to learn more about my experience and skills,
+              don't hesitate to reach out. I'm always excited to connect with
+              other professionals in the industry and explore new opportunities.
+            </p>
             <input
               placeholder="Name"
               name="Name"

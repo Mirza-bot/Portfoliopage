@@ -1,4 +1,5 @@
 import "./main.css";
+import "animate.css/animate.min.css";
 import Navbar from "./components/Navbar/Navbar";
 import GreetingPage from "./Pages/GreetingPage/GreetingPage";
 import ProjectsPage from "./Pages/ProjectsPage/ProjectsPage";

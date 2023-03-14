@@ -14,7 +14,7 @@ import Kanban_Data from "/src/assets/Projects/TodoList/data.json";
 function ProjectsPage() {
   return (
     <>
-      <div>
+      <div className="border-t-2 border-primaryText ">
         <div className=" relative">
           <div
             id="work"

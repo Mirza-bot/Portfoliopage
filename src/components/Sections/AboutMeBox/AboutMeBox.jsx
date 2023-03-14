@@ -1,5 +1,6 @@
 import "./styles.css";
 import IconLink from "../../buttons/IconLink";
+import { AnimationOnScroll } from "react-animation-on-scroll";
 
 /**
  * A component to tell a bit about myself.
@@ -7,11 +8,12 @@ import IconLink from "../../buttons/IconLink";
  */
 function AboutMeCard() {
   return (
-    <>
-      <div
-        id="about"
-        className="border-b-2 border-primaryText sm:p-5 py-5 px-2 "
-      >
+    <AnimationOnScroll
+      animateIn="animate__fadeInRight"
+      duration={0.7}
+      animateOnce
+    >
+      <div id="about" className="sm:p-5 py-5 px-2 ">
         <div className=" md:w-4/5 mx-auto">
           <div className="flex justify-between">
             <h3 className=" text-3xl select-none text-primaryText">
@@ -92,7 +94,7 @@ function AboutMeCard() {
           </div>
         </div>
       </div>
-    </>
+    </AnimationOnScroll>
   );
 }
 
