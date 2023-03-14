@@ -1,6 +1,44 @@
 {
   "hosting": {
     "public": "dist",
+    "headers": [
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'none'; script-src 'self'; object-src 'none'; style-src https://fonts.googleapis.com https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap; style-src-elem https://fonts.googleapis.com https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap; img-src 'self'; font-src https://fonts.gstatic.com; connect-src 'self'; media-src 'self'; frame-src 'none'; frame-ancestors 'self'; form-action 'self'; base-uri 'self';"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "X-Content-Type-Options",
+            "value": "nosniff"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "X-Frame-Options",
+            "value": "SAMEORIGIN"
+          }
+        ]
+      },
+      {
+        "source": "/",
+        "headers": [
+          {
+            "key": "X-XSS-Protection",
+            "value": "1; mode=block"
+          }
+        ]
+      }
+    ],
     "ignore": [
       "firebase.json",
       "**/.*",

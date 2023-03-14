@@ -13,18 +13,20 @@ function AboutMeCard() {
         className="border-b-2 border-primaryText sm:p-5 py-5 px-2 "
       >
         <div className=" md:w-4/5 mx-auto">
-          <span className=" text-3xl select-none  text-primaryText">
-            {"{"}About Me{"}"}
-          </span>
-          <div className="portrait:md_displayed md_displayed float-right flex justify-between text-3xl sm:w-26 w-20  mr-3">
-            <IconLink
-              linkName={"GitHub"}
-              targetLink={"https://github.com/Mirza-bot"}
-            />
-            <IconLink
-              linkName={"LinkedIn"}
-              targetLink={"http://linkedin.com/in/mirzamalkoc"}
-            />
+          <div className="flex justify-between">
+            <h3 className=" text-3xl select-none text-primaryText">
+              {"{"}About Me{"}"}
+            </h3>
+            <div className="portrait:md_displayed md_displayed float-right flex justify-between text-3xl pt-1 w-20 ">
+              <IconLink
+                linkName={"GitHub"}
+                targetLink={"https://github.com/Mirza-bot"}
+              />
+              <IconLink
+                linkName={"LinkedIn"}
+                targetLink={"http://linkedin.com/in/mirzamalkoc"}
+              />
+            </div>
           </div>
           <div className=" grid grid-flow-row-dense grid-cols-12 mt-8 p-2 gap-3">
             <div className="col-span-10 col-start-2 lg:row-span-2 md:row-span-3 md:col-start-1 md:col-span-4 md:row-start-1 md:mr-3 md:max-h-44">

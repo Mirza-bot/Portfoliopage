@@ -38,9 +38,9 @@ function ContactBox() {
     <div id="contact">
       {success ? (
         <div className="bg-primary-dark border-t-2 border-primaryText flex flex-col items-center py-32 mt-60">
-          <p className="select-none text-3xl text-center mb-10 text-primaryText">
+          <h3 className="select-none text-3xl text-center mb-10 text-primaryText">
             {"{Thank You}"}
-          </p>
+          </h3>
           <p className="text-primaryText text-xl sm:w-3/4 lg:w-1/2">
             Thank you for your message! I will get back to you shortly. In the
             meantime, feel free to browse my portfolio and learn more about my
@@ -52,9 +52,9 @@ function ContactBox() {
         </div>
       ) : (
         <div className=" bg-primary-dark border-t-2 border-primaryText flex flex-col items-center pt-5 sm:pb-10 px-10 mt-60 ">
-          <p className="select-none text-3xl text-center mb-10 text-primaryText">
+          <h3 className="select-none text-3xl text-center mb-10 text-primaryText">
             {"{Contact Me}"}
-          </p>
+          </h3>
           <form
             onSubmit={(e) => {
               e.preventDefault();

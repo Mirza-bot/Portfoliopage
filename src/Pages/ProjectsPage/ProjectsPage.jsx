@@ -20,9 +20,9 @@ function ProjectsPage() {
             id="work"
             className="bg-primary-light p-5 md:w-fit md:absolute md:top-20 md:left-1/4"
           >
-            <p className="text-primaryText text-3xl select-none">
+            <h3 className="text-primaryText text-3xl select-none">
               {"{Projects}"}
-            </p>
+            </h3>
           </div>
           <div className="flex flex-col pt-20">
             <div className="animate-[levitation_2s_ease-in-out_infinite]">
@@ -31,6 +31,9 @@ function ProjectsPage() {
                 projectVideo={JAM_Vid}
                 projectName={JAM_Data.data.en.name}
                 projectText={JAM_Data.data.en.description}
+                demoLink={"/notimplemented"}
+                repoLink={"/notimplemented"}
+                buttonDisabled={true}
               />
             </div>
             <div className="animate-[levitation_2s_0.3s_ease-in-out_infinite]">

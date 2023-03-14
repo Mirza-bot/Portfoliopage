@@ -7,9 +7,9 @@ import { BsDisplay } from "react-icons/bs";
  * @param {string} projectName name of the project.
  * @param {string} projectText a short description of the project.
  * @param {string} projectImage a image of the project to present. (supports all formats for <img/> - tag.)
- * @param {string} projectVideo a video of the project to present. (webM preferred)
  * @param {string} demoLink a link to the project url (to test it).
  * @param {string} repoLink a link to the github repository.
+ * @param {string} buttonDisabled if set on true the buttons become disabled.
  * @returns 2 animated cards for the image and the description.
  */
 function ProjectSection({
@@ -18,7 +18,7 @@ function ProjectSection({
   projectImage,
   demoLink,
   repoLink,
-  projectVideo,
+  buttonDisabled,
 }) {
   const buttonFill = (name) => {
     if (name === "Code") {
@@ -76,20 +76,22 @@ function ProjectSection({
           alt={projectName}
         />
         <div className=" lg:absolute lg:-bottom-20 lg:-right-20 bg-primary-light text-white pb-4 px-4 pt-2 z-10  lg:max-w-xs transition-all ease-out duration-300 border-t-2 lg:border-none border-primaryText">
-          <p className="shadow-3xl lg:-translate-x-14 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-center w-max py-1 px-2">
+          <h4 className="shadow-3xl lg:-translate-x-14 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-center w-max py-1 px-2">
             {projectName}
-          </p>
+          </h4>
           <p className="text_style2 font-thin mb-2">{projectText}</p>
           <div className="flex justify-between mx-6 md:mx-16 lg:mx-6">
             <LinkBtn
               buttonName={buttonFill("Demo")}
               btnLink={demoLink}
               alternative={true}
+              disabled={buttonDisabled}
             />
             <LinkBtn
               buttonName={buttonFill("Code")}
               btnLink={repoLink}
               alternative={true}
+              disabled={buttonDisabled}
             />
           </div>
         </div>

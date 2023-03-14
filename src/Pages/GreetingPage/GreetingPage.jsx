@@ -16,17 +16,17 @@ function GreetingPage() {
     >
       <div id="grid_container" className="grid grid-cols-10 grid-rows-6 m-2">
         <div className="xl:col-span-4 xl:col-start-2 md:col-span-7 md:col-start-2 sm:col-start-2 col-start-2 row-start-2 sm:row-start-4 col-span-10">
-          <p className="text-4xl sm:text-6xl font-semibold ">Malkoc Mirza</p>
-          <p className="text-2xl sm:text-3xl text-primaryText mt-3 tracking-tighter">
+          <h1 className="text-4xl sm:text-6xl font-semibold ">Malkoc Mirza</h1>
+          <h2 className="text-2xl sm:text-3xl text-primaryText mt-3 tracking-tighter">
             {softwareDeveloper}
-          </p>
+          </h2>
         </div>
         <div className="text_style2 text-lg xl:col-span-3 xl:col-start-2  md:col-span-4 md:col-start-2 row-start-3 sm:row-start-5 md:row-start-5 col-span-8 col-start-2 sm:mt-3">
-          <p className="font-thin">
+          <h3 className="font-thin">
             My passion for development drives creativity, satisfaction of
             solving complex problems with elegant solutions and constant
             improvement.
-          </p>
+          </h3>
         </div>
         <div className="sm:row-span-5 row-start-4 mt-10 sm:mt-0 sm:row-start-6 col-span-1 col-start-2">
           <Link

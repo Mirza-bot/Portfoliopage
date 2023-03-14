@@ -17,6 +17,7 @@ function Navbar() {
             duration={500}
             className=" hover:cursor-pointer  "
             href="/"
+            aria-label="Website Logo - return to start"
           >
             <svg
               width="57"

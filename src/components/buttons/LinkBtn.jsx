@@ -4,9 +4,30 @@
  * @param {string} alternative takes a boolean value to determine if it shows the alternative design or the standard one.
  * @param {string} addClass takes css classes inline from the component tag to effect the component.
  * @param {string} btnLink takes a url to target the website when the button is pressed.
+ * @param {string} disabled when set on true disables the button.
  * @returns
  */
-function BasicBtn({ buttonName, alternative, addClass, btnLink }) {
+function LinkBtn({ buttonName, alternative, addClass, btnLink, disabled }) {
+  if (disabled) {
+    return (
+      <div className="cursor-not-allowed">
+        <a
+          href={btnLink}
+          target="_blank"
+          aria-disabled={true}
+          className={"pointer-events-none"}
+        >
+          <button
+            disabled={true}
+            className={`text_style1 text-secondary-light font-semibold select-none rounded-lg mt-2 px-3 py-2 ${addClass} bg-secondary-light`}
+          >
+            {buttonName}
+          </button>
+        </a>
+      </div>
+    );
+  }
+
   return !alternative ? (
     <a href={btnLink} target="_blank">
       <button
@@ -26,4 +47,4 @@ function BasicBtn({ buttonName, alternative, addClass, btnLink }) {
   );
 }
 
-export default BasicBtn;
+export default LinkBtn;
