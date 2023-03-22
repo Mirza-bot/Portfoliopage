@@ -5,8 +5,8 @@ function MobileMenu({ toggle, setToggle }) {
   return (
     <div
       className={
-        (toggle ? "" : "-translate-y-full") +
-        " mobile_nav_bg absolute top-0 left-0 w-full bg-secondary-light  transition-all duration-500 ease-out border-b-2 border-primaryText"
+        (toggle ? "" : "hide_menu") +
+        " mobile_nav_bg absolute top-0 left-0 w-full bg-secondary-light  transition-all duration-500 ease-in-out border-b-2 border-primaryText"
       }
     >
       <div className="text-primaryText absolute right-6 top-4"></div>

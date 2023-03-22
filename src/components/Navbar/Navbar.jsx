@@ -41,7 +41,7 @@ function Navbar() {
         </div>
         <div id="nav" className=" md:w-3/5 lg:w-2/5 px-5 sm:px-3 mt-3 mr-20">
           <div className="flex justify-between  mt-1 text-white ">
-            <div className="px-5 md_hidden ">
+            <div className="px-5 lg_hidden ">
               <Link
                 activeClass="underline text-primaryText"
                 to="about"
@@ -55,7 +55,7 @@ function Navbar() {
                 About Me
               </Link>
             </div>
-            <div className="px-5 md_hidden">
+            <div className="px-5 lg_hidden">
               <Link
                 activeClass="underline text-primaryText"
                 to="work"
@@ -69,7 +69,7 @@ function Navbar() {
                 Projects
               </Link>
             </div>
-            <div className="px-5 md_hidden">
+            <div className="px-5  lg_hidden">
               <Link
                 activeClass="underline text-primaryText"
                 to="contact"

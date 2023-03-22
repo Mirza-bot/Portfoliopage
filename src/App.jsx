@@ -26,7 +26,7 @@ function App() {
     <>
       <div className={"sticky top-0 z-40 select-none"}>
         <div
-          className="md:hidden absolute z-50 right-5 top-5 text-primaryText"
+          className="lg:hidden absolute z-50 right-5 top-5 text-primaryText"
           onClick={() => {
             setToggle(!toggle);
           }}

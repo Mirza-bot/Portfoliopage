@@ -49,8 +49,8 @@ function AboutMeCard() {
                 opportunities to build innovative solutions that enhance
                 clients' experience.
                 <br />
-                I bring expertise in problem-solving, communication, and
-                teamwork, and always aim for high-quality work.
+                I bring expertise in problem-solving, communication, teamwork,
+                and always aim for high-quality work.
                 <br />
                 If you're looking for a skilled and dedicated developer, let's
                 connect."

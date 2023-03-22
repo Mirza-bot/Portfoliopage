@@ -3,3 +3,7 @@
   backdrop-filter: blur(20px);
   height: 100vh;
 }
+
+.hide_menu {
+  transform: translateY(-200vh);
+}

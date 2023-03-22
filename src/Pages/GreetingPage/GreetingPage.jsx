@@ -12,16 +12,16 @@ function GreetingPage() {
   return (
     <div
       id="home"
-      className="greeting_page sm:pt-10 pt-3 relative border-b-2 border-primaryText"
+      className="greeting_page sm:pt-10 pt-3 pb-10 relative border-b-2 border-primaryText"
     >
       <div id="grid_container" className="grid grid-cols-10 grid-rows-6 m-2">
-        <div className="xl:col-span-4 xl:col-start-2 md:col-span-7 md:col-start-2 sm:col-start-2 col-start-2 row-start-2 sm:row-start-4 col-span-10">
+        <div className="xl:col-span-4 xl:col-start-2 md:col-span-7 md:col-start-2 md:row-start-4 sm:col-start-2 col-start-2 row-start-2 sm:row-start-3 col-span-10">
           <h1 className="text-4xl sm:text-6xl font-semibold ">Malkoc Mirza</h1>
           <h2 className="text-2xl sm:text-3xl text-primaryText mt-3 tracking-tighter">
             {softwareDeveloper}
           </h2>
         </div>
-        <div className="text_style2 text-lg xl:col-span-3 xl:col-start-2  md:col-span-4 md:col-start-2 row-start-3 sm:row-start-5 md:row-start-5 col-span-8 col-start-2 sm:mt-3">
+        <div className="text_style2 text-lg xl:col-span-3 xl:col-start-2  md:col-span-4 md:col-start-2 row-start-3 sm:row-start-4 md:row-start-5 col-span-8 col-start-2 sm:mt-3">
           <h3 className="font-thin">
             My passion for development drives creativity, satisfaction of
             solving complex problems with elegant solutions and constant
