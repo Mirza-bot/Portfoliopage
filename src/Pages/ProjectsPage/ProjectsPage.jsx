@@ -24,8 +24,8 @@ function ProjectsPage() {
               {"{Projects}"}
             </h3>
           </div>
-          <div className="flex flex-col pt-20">
-            <div className="animate-[levitation_2s_ease-in-out_infinite]">
+          <div className="flex flex-col md:pt-20">
+            <div className="sm:animate-[levitation_2s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={JAM_Img}
                 projectVideo={JAM_Vid}
@@ -36,7 +36,7 @@ function ProjectsPage() {
                 buttonDisabled={true}
               />
             </div>
-            <div className="animate-[levitation_2s_0.3s_ease-in-out_infinite]">
+            <div className="sm:animate-[levitation_2s_0.3s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={PADB_Img}
                 projectName={PADB_Data.data.en.name}
@@ -45,7 +45,7 @@ function ProjectsPage() {
                 repoLink={PADB_Data.data.link.repo}
               />
             </div>
-            <div className="animate-[levitation_2s_0.6s_ease-in-out_infinite]">
+            <div className="sm:animate-[levitation_2s_0.6s_ease-in-out_infinite]">
               <ProjectSection
                 projectImage={Kanban_Img}
                 projectName={Kanban_Data.data.en.name}

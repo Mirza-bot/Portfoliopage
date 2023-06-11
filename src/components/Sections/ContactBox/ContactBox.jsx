@@ -37,7 +37,7 @@ function ContactBox() {
   return (
     <div id="contact">
       {success ? (
-        <div className="bg-primary-dark border-t-2 border-primaryText flex flex-col items-center py-32 mt-60 px-10">
+        <div className="bg-primary-dark border-t-2 border-primaryText flex flex-col items-center py-32 mt-20 sm:mt-60 px-10">
           <h3 className="select-none text-3xl text-center mb-10 text-primaryText">
             {"{Thank You}"}
           </h3>
@@ -51,7 +51,7 @@ function ContactBox() {
           </p>
         </div>
       ) : (
-        <div className=" bg-primary-dark border-t-2 border-primaryText flex flex-col items-center pt-5 sm:pb-10 sm:px-10 mt-60 ">
+        <div className=" bg-primary-dark border-t-2 border-primaryText flex flex-col items-center pt-5 sm:pb-10 sm:px-10 mt-20 sm:mt-60 ">
           <h3 className="select-none text-3xl text-center sm:mb-10 mb-5 text-primaryText">
             {"{Contact Me}"}
           </h3>
@@ -106,7 +106,7 @@ function ContactBox() {
             <BasicBtn
               buttonName={"Send"}
               alternative={false}
-              addClass={"mb-10 sm:mb-0 w-32"}
+              addClass={"mb-10 sm:mb-0 px-10 py-3"}
               type={"submit"}
             />
           </form>

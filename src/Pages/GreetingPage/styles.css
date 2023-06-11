@@ -1,15 +1,5 @@
-.greeting_page {
-  width: 100%;
-  min-height: 95vh;
-  color: white;
-}
-
-#grid_container {
-  max-height: 95vh;
-}
-
-#link_icons {
-  height: 6vh;
+#home {
+  min-height: calc(100vh - 5rem);
 }
 
 @media (orientation: landscape) and (hover: none) and (pointer: coarse) {
@@ -27,8 +17,7 @@
 .style_vl {
   border-right: #5eead4 solid 2px;
   height: 25vh;
-  bottom: 0vh;
-  right: 2.1rem;
+  right: 1rem;
 }
 
 @media screen and (max-height: 1100px) {

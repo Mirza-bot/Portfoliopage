@@ -58,8 +58,8 @@ function ProjectSection({
       animateOnce
       duration={0.6}
     >
-      <div className="md:w-3/5 lg:w-4/5 mx-auto my-16 md:my-32 relative ">
-        <div className="md:translate-x-5 mx-auto w-4/5 lg:pt-32 xl:pt0 border-2 border-primaryText lg:border-none">
+      <div className="md:w-3/5 lg:w-4/5 mx-auto my-10 sm:my-16 md:my-32 relative transition-none ">
+        <div className="md:translate-x-5 mx-auto sm:w-4/5 lg:pt-32 xl:pt0 border-2 border-primaryText lg:border-none">
           <img
             className="select-none lg:brightness-50 lg:hover:brightness-100 lg:w-4/5 lg:hover:ring-2 hover:cursor-pointer lg:ring-primaryText lg:hover:scale-105 transition-all ease-out duration-300"
             onMouseEnter={(e) => {
@@ -81,12 +81,12 @@ function ProjectSection({
             src={projectImage}
             alt={projectName}
           />
-          <div className=" lg:absolute lg:-bottom-20 lg:-right-20 bg-primary-light text-white pb-4 px-4 pt-2 z-10  lg:max-w-xs transition-all ease-out duration-300 border-t-2 lg:border-none border-primaryText">
-            <h4 className="shadow-3xl lg:-translate-x-14 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-center w-max py-1 px-2">
+          <div className=" lg:absolute lg:-bottom-20 lg:-right-20 bg-primary-light text-white pb-4 lg:px-4 lg:pt-2 z-10  lg:max-w-xs transition-all ease-out duration-300 border-t-2 lg:border-none border-primaryText">
+            <h4 className=" lg:shadow-3xl lg:-translate-x-14 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-center lg:w-max py-1 px-2">
               {projectName}
             </h4>
-            <p className="text_style2 font-thin mb-2">{projectText}</p>
-            <div className="flex justify-between mx-6 md:mx-16 lg:mx-6">
+            <p className="text_style2 font-thin mb-2 p-4">{projectText}</p>
+            <div className="flex justify-between mx-3 md:mx-16 lg:mx-6">
               <LinkBtn
                 buttonName={buttonFill("Demo")}
                 btnLink={demoLink}
