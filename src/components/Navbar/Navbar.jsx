@@ -8,7 +8,7 @@ function Navbar() {
         id="nav_bg"
         className=" h-20 py-3 flex justify-between border-b-2 border-primaryText  bg-primary-dark"
       >
-        <div className=" pl-5 w-32 ">
+        <div className="pl-2 w-20 sm:absolute sm:left-32 ">
           <Link
             to="home"
             spy={true}
@@ -40,8 +40,8 @@ function Navbar() {
           </Link>
         </div>
         <div id="nav" className=" md:w-3/5 lg:w-2/5 px-5 sm:px-3 mt-3 mr-20">
-          <div className="flex justify-between  mt-1 text-white ">
-            <div className="px-5 lg_hidden ">
+          <div className="flex justify-between sm:absolute sm:right-36 mt-1 text-white ">
+            <div className="px-5 lg_hidden sm:mx-5">
               <Link
                 activeClass="underline text-primaryText"
                 to="about"
@@ -55,7 +55,7 @@ function Navbar() {
                 About Me
               </Link>
             </div>
-            <div className="px-5 lg_hidden">
+            <div className="px-5 lg_hidden sm:mx-5">
               <Link
                 activeClass="underline text-primaryText"
                 to="work"
@@ -69,7 +69,7 @@ function Navbar() {
                 Projects
               </Link>
             </div>
-            <div className="px-5  lg_hidden">
+            <div className="px-5  lg_hidden sm:mx-5">
               <Link
                 activeClass="underline text-primaryText"
                 to="contact"

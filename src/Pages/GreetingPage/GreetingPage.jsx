@@ -50,7 +50,7 @@ function GreetingPage() {
       </div>
       <div
         id="link_icons"
-        className=" absolute flex flex-col justify-between right-5 top-2/3 md_hidden leading-3 z-10 rounded-full"
+        className=" absolute flex flex-col justify-between right-5 bottom-0 md_hidden leading-3 z-10 rounded-full"
       >
         <div className=" rounded-full mb-1">
           <IconLink
@@ -66,7 +66,6 @@ function GreetingPage() {
             addClass={"text-3xl"}
           />
         </div>
-        <div className="relative style_vl md_hidden"></div>
       </div>
     </div>
   );

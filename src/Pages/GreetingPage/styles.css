@@ -14,12 +14,6 @@
   }
 }
 
-.style_vl {
-  border-right: #5eead4 solid 2px;
-  height: 25vh;
-  right: 1rem;
-}
-
 @media screen and (max-height: 1100px) {
   #link_icons {
     transform: translateY(-2vh);

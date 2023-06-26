@@ -58,7 +58,7 @@ function ProjectSection({
       animateOnce
       duration={0.6}
     >
-      <div className="md:w-3/5 lg:w-4/5 mx-auto my-10 sm:my-16 md:my-32 relative transition-none ">
+      <div className="md:w-3/5 w-10/12 mx-auto my-10 sm:my-16 md:my-32 relative transition-none ">
         <div className="md:translate-x-5 mx-auto sm:w-4/5 lg:pt-32 xl:pt0 border-2 border-primaryText lg:border-none">
           <img
             className="select-none lg:brightness-50 lg:hover:brightness-100 lg:w-4/5 lg:hover:ring-2 hover:cursor-pointer lg:ring-primaryText lg:hover:scale-105 transition-all ease-out duration-300"
@@ -86,19 +86,23 @@ function ProjectSection({
               {projectName}
             </h4>
             <p className="text_style2 font-thin mb-2 p-4">{projectText}</p>
-            <div className="flex justify-between mx-3 md:mx-16 lg:mx-6">
-              <LinkBtn
-                buttonName={buttonFill("Demo")}
-                btnLink={demoLink}
-                alternative={true}
-                disabled={buttonDisabled}
-              />
-              <LinkBtn
-                buttonName={buttonFill("Code")}
-                btnLink={repoLink}
-                alternative={true}
-                disabled={buttonDisabled}
-              />
+            <div className="flex ml-4">
+              <div className="mr-2">
+                <LinkBtn
+                  buttonName={buttonFill("Demo")}
+                  btnLink={demoLink}
+                  alternative={true}
+                  disabled={buttonDisabled}
+                />
+              </div>
+              <div>
+                <LinkBtn
+                  buttonName={buttonFill("Code")}
+                  btnLink={repoLink}
+                  alternative={true}
+                  disabled={buttonDisabled}
+                />
+              </div>
             </div>
           </div>
         </div>
