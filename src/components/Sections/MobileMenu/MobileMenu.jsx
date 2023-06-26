@@ -10,16 +10,16 @@ function MobileMenu({ toggle, setToggle }) {
       }
     >
       <div className="text-primaryText absolute right-6 top-4"></div>
-      <div className="items-center mx-auto pt-32 flex flex-col w-3/4 max-w-screen-sm gap-10 justify-center text-white">
+      <div className="items-center mx-auto pt-32 flex flex-col w-3/4 max-w-screen-sm gap-10 justify-center text-primaryText">
         <div className="flex justify-between w-24">
           <IconLink
             linkName={"GitHub"}
-            addClass={"text-4xl text-white hover:text-primaryText"}
+            addClass={"text-4xl text-primaryText hover:text-white"}
             targetLink={"https://github.com/Mirza-bot"}
           />
           <IconLink
             linkName={"LinkedIn"}
-            addClass={"text-4xl text-white hover:text-primaryText"}
+            addClass={"text-4xl text-primaryText hover:text-white"}
             targetLink={"http://linkedin.com/in/mirzamalkoc"}
           />
         </div>
@@ -28,7 +28,7 @@ function MobileMenu({ toggle, setToggle }) {
             onClick={() => {
               setToggle(!toggle);
             }}
-            activeClass="underline text-primaryText"
+            activeClass="underline text-white"
             to="about"
             spy={true}
             smooth={true}
@@ -45,7 +45,7 @@ function MobileMenu({ toggle, setToggle }) {
             onClick={() => {
               setToggle(!toggle);
             }}
-            activeClass="underline text-primaryText"
+            activeClass="underline text-white"
             to="work"
             spy={true}
             smooth={true}
@@ -62,7 +62,7 @@ function MobileMenu({ toggle, setToggle }) {
             onClick={() => {
               setToggle(!toggle);
             }}
-            activeClass="underline text-primaryText"
+            activeClass="underline text-white"
             to="contact"
             spy={true}
             smooth={true}

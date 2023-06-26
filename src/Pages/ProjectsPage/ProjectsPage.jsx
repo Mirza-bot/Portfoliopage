@@ -18,42 +18,36 @@ function ProjectsPage() {
         <div className=" relative">
           <div
             id="work"
-            className="bg-primary-light p-5 md:w-fit md:absolute md:top-20 md:left-1/4"
+            className=" sm:w-4/12 sm:text-center sm:mt-16 sm:mx-0 ml-6"
           >
-            <h3 className="text-primaryText text-3xl select-none">
+            <h3 className="text-primaryText text-3xl select-none mt-10 mb-20">
               {"{Projects}"}
             </h3>
           </div>
-          <div className="flex flex-col md:pt-20">
-            <div className="sm:animate-[levitation_2s_ease-in-out_infinite]">
-              <ProjectSection
-                projectImage={JAM_Img}
-                projectVideo={JAM_Vid}
-                projectName={JAM_Data.data.en.name}
-                projectText={JAM_Data.data.en.description}
-                demoLink={"/notimplemented"}
-                repoLink={"/notimplemented"}
-                buttonDisabled={true}
-              />
-            </div>
-            <div className="sm:animate-[levitation_2s_0.3s_ease-in-out_infinite]">
-              <ProjectSection
-                projectImage={PADB_Img}
-                projectName={PADB_Data.data.en.name}
-                projectText={PADB_Data.data.en.description}
-                demoLink={PADB_Data.data.link.demo}
-                repoLink={PADB_Data.data.link.repo}
-              />
-            </div>
-            <div className="sm:animate-[levitation_2s_0.6s_ease-in-out_infinite]">
-              <ProjectSection
-                projectImage={Kanban_Img}
-                projectName={Kanban_Data.data.en.name}
-                projectText={Kanban_Data.data.en.description}
-                demoLink={Kanban_Data.data.link.demo}
-                repoLink={Kanban_Data.data.link.repo}
-              />
-            </div>
+          <div className="sm:mx-auto sm:w-10/12 grid grid-cols-1  lg:grid-cols-2 lg:items-start items-center gap-y-10 lg:gap-y-36">
+            <ProjectSection
+              projectImage={JAM_Img}
+              projectVideo={JAM_Vid}
+              projectName={JAM_Data.data.en.name}
+              projectText={JAM_Data.data.en.description}
+              demoLink={"/notimplemented"}
+              repoLink={"/notimplemented"}
+              buttonDisabled={true}
+            />
+            <ProjectSection
+              projectImage={PADB_Img}
+              projectName={PADB_Data.data.en.name}
+              projectText={PADB_Data.data.en.description}
+              demoLink={PADB_Data.data.link.demo}
+              repoLink={PADB_Data.data.link.repo}
+            />
+            <ProjectSection
+              projectImage={Kanban_Img}
+              projectName={Kanban_Data.data.en.name}
+              projectText={Kanban_Data.data.en.description}
+              demoLink={Kanban_Data.data.link.demo}
+              repoLink={Kanban_Data.data.link.repo}
+            />
           </div>
         </div>
       </div>

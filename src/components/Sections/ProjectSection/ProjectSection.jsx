@@ -1,4 +1,3 @@
-import { AnimationOnScroll } from "react-animation-on-scroll";
 import LinkBtn from "../../buttons/LinkBtn";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { BsDisplay } from "react-icons/bs";
@@ -53,61 +52,39 @@ function ProjectSection({
   };
 
   return (
-    <AnimationOnScroll
-      animateIn="animate__fadeInLeft"
-      animateOnce
-      duration={0.6}
-    >
-      <div className="md:w-3/5 w-10/12 mx-auto my-10 sm:my-16 md:my-32 relative transition-none ">
-        <div className="md:translate-x-5 mx-auto sm:w-4/5 lg:pt-32 xl:pt0 border-2 border-primaryText lg:border-none">
-          <img
-            className="select-none lg:brightness-50 lg:hover:brightness-100 lg:w-4/5 lg:hover:ring-2 hover:cursor-pointer lg:ring-primaryText lg:hover:scale-105 transition-all ease-out duration-300"
-            onMouseEnter={(e) => {
-              e.target.parentElement.lastChild.classList.toggle(
-                "lg:translate-x-20"
-              );
-            }}
-            onMouseLeave={(e) => {
-              e.target.parentElement.lastChild.classList.toggle(
-                "lg:translate-x-20"
-              );
-              e.target.classList.remove("lg:w-full");
-              e.target.parentElement.lastChild.classList.remove("lg:opacity-0");
-            }}
-            onClick={(e) => {
-              e.target.classList.toggle("lg:w-full");
-              e.target.parentElement.lastChild.classList.toggle("lg:opacity-0");
-            }}
-            src={projectImage}
-            alt={projectName}
-          />
-          <div className=" lg:absolute lg:-bottom-20 lg:-right-20 bg-primary-light text-white pb-4 lg:px-4 lg:pt-2 z-10  lg:max-w-xs transition-all ease-out duration-300 border-t-2 lg:border-none border-primaryText">
-            <h4 className=" lg:shadow-3xl lg:-translate-x-14 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-center lg:w-max py-1 px-2">
-              {projectName}
-            </h4>
-            <p className="text_style2 font-thin mb-2 p-4">{projectText}</p>
-            <div className="flex ml-4">
-              <div className="mr-2">
-                <LinkBtn
-                  buttonName={buttonFill("Demo")}
-                  btnLink={demoLink}
-                  alternative={true}
-                  disabled={buttonDisabled}
-                />
-              </div>
-              <div>
-                <LinkBtn
-                  buttonName={buttonFill("Code")}
-                  btnLink={repoLink}
-                  alternative={true}
-                  disabled={buttonDisabled}
-                />
-              </div>
+    <div className=" w-10/12 relative transition-none mx-auto ">
+      <div className=" mx-auto sm:w-4/5 xl:pt0 border-2 border-primaryText rounded-md">
+        <img
+          className="select-none hover:cursor-pointer rounded-t-md  lg:ring-primaryText transition-all ease-out duration-300"
+          src={projectImage}
+          alt={projectName}
+        />
+        <div className=" bg-primary-light text-white pb-4 z-10  transition-all ease-out duration-300 border-t-2  border-primaryText">
+          <h4 className="pl-3 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-centerpy-1 px-2">
+            {projectName}
+          </h4>
+          <p className="text_style2 font-thin mb-2 p-4">{projectText}</p>
+          <div className="flex ml-4">
+            <div className="mr-2">
+              <LinkBtn
+                buttonName={buttonFill("Demo")}
+                btnLink={demoLink}
+                alternative={true}
+                disabled={buttonDisabled}
+              />
+            </div>
+            <div>
+              <LinkBtn
+                buttonName={buttonFill("Code")}
+                btnLink={repoLink}
+                alternative={true}
+                disabled={buttonDisabled}
+              />
             </div>
           </div>
         </div>
       </div>
-    </AnimationOnScroll>
+    </div>
   );
 }
 

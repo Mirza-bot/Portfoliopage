@@ -14,7 +14,7 @@ function GreetingPage() {
       id="home"
       className=" sm:pt-10 pt-3 pb-10 relative border-b-2 border-primaryText"
     >
-      <div className="absolute top-1/2 sm:top-2/3 left-1/2 sm:left-1/3 transform -translate-x-1/2 sm:-translate-x-1/3 -translate-y-1/2 p-4 w-full sm:w-3/4">
+      <div className="absolute top-1/2 sm:top-2/3 left-1/2 sm:left-1/3 transform -translate-x-1/2 sm:-translate-x-1/3 -translate-y-1/2 p-4 sm:p-8 w-full sm:w-3/4">
         <div className="text-white">
           <h1 className="text-4xl sm:text-6xl font-semibold mb-2">
             Malkoc Mirza

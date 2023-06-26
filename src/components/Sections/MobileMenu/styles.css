@@ -1,7 +1,7 @@
 .mobile_nav_bg {
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
-  height: 100vh;
+  height: 100.5vh;
 }
 
 .hide_menu {

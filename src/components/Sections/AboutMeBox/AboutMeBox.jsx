@@ -15,7 +15,7 @@ function AboutMeCard() {
     >
       <div id="about" className="sm:p-5 py-5 px-2 ">
         <div className=" md:w-4/5 mx-auto">
-          <div className="flex justify-between">
+          <div className="flex text-center space-x-16 ml-4 sm:m-0 ">
             <h3 className=" text-3xl select-none text-primaryText">
               {"{"}About Me{"}"}
             </h3>
@@ -30,7 +30,7 @@ function AboutMeCard() {
               />
             </div>
           </div>
-          <div className=" grid grid-flow-row-dense grid-cols-12 mt-8 p-2 gap-3">
+          <div className=" grid grid-cols-12 mt-8 gap-3">
             <div className="col-span-10 col-start-2 lg:row-span-2 md:row-span-3 md:col-start-1 md:col-span-4 md:row-start-1 md:mr-3 md:max-h-44">
               <div
                 id="avatar"
@@ -56,14 +56,14 @@ function AboutMeCard() {
                 connect."
               </p>
             </div>
-            <div className="bg-primary-dark pt-3 pb-1 px-3 ring-2 ring-primaryText  row-start-4 col-start-1 col-span-12 lg:mt-20  rounded-md  my-10 ">
+            <div className="bg-primary-dark pt-3 pb-1 px-3 ring-2 ring-primaryText  row-start-4 col-start-1 col-span-12 lg:mt-20  rounded-md  my-10 mx-6 sm:mx-0 ">
               <span className="text-lg text-primaryText absolute -translate-y-12">
                 {"{Tech-Stack}"}
               </span>
-              <div className=" flex flex-wrap justify-evenly gap-4 sm:text-4xl text-3xl">
+              <div className=" flex flex-wrap justify-evenly gap-7 text-4xl">
                 <IconLink
-                  linkName={"JavaScript"}
-                  targetLink="https://www.javascript.com/"
+                  linkName={"Typescript"}
+                  targetLink="https://www.typescriptlang.org/"
                 />
                 <IconLink
                   linkName={"HTML5"}

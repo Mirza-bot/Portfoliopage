@@ -1,7 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import {
   SiHtml5,
-  SiJavascript,
+  SiTypescript,
   SiMongodb,
   SiCss3,
   SiTailwindcss,
@@ -28,8 +28,8 @@ function IconLink({ targetLink, linkName, addClass }) {
       case "LinkedIn": {
         return <AiFillLinkedin className={style} />;
       }
-      case "JavaScript": {
-        return <SiJavascript className={style} />;
+      case "Typescript": {
+        return <SiTypescript className={style} />;
       }
       case "HTML5": {
         return <SiHtml5 className={style} />;
