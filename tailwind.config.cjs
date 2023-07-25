@@ -2,18 +2,9 @@
 module.exports = {
   content: [
     "./index.html.html",
+    "./src/Pages/**/*.{html,js,jsx}",
+    "./src/components/**/*.{html,js,jsx}",
     "./src/App.jsx",
-    "./src/components/Navbar/Navbar.jsx",
-    "./src/components/Sections/MobileMenu/MobileMenu.jsx",
-    "./src/Pages/GreetingPage/GreetingPage.jsx",
-    "./src/components/Sections/AboutMeBox/AboutMeBox.jsx",
-    "./src/Pages/ProjectsPage/ProjectsPage.jsx",
-    "./src/components/buttons/BasicBtn.jsx",
-    "./src/components/buttons/LinkBtn.jsx",
-    "./src/components/buttons/IconLink.jsx",
-    "./src/components/Sections/ProjectSection/ProjectSection.jsx",
-    "./src/components/Sections/ContactBox/ContactBox.jsx",
-    "./src/components/Footer/Footer.jsx",
   ],
   theme: {
     colors: {

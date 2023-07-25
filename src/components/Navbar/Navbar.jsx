@@ -8,7 +8,7 @@ function Navbar() {
         id="nav_bg"
         className=" h-20 py-3 flex justify-between border-b-2 border-t-2 border-primaryText  bg-primary-dark"
       >
-        <div className="pl-3 w-20 sm:absolute sm:left-32 ">
+        <div className="pl-3 w-20 sm:absolute sm:left-0 lg:left-32 ">
           <Link
             to="home"
             spy={true}

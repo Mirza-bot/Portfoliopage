@@ -52,14 +52,14 @@ function ProjectSection({
   };
 
   return (
-    <div className=" w-10/12 relative transition-none mx-auto ">
+    <div className=" w-10/12 relative transition-none mx-auto  ">
       <div className=" mx-auto sm:w-4/5 xl:pt0 border-2 border-primaryText rounded-md">
         <img
           className="select-none hover:cursor-pointer rounded-t-md  lg:ring-primaryText transition-all ease-out duration-300"
           src={projectImage}
           alt={projectName}
         />
-        <div className=" bg-primary-light text-white pb-4 z-10  transition-all ease-out duration-300 border-t-2  border-primaryText">
+        <div className=" bg-primary-light  text-white pb-4 z-10  transition-all ease-out duration-300 border-t-2  border-primaryText">
           <h4 className="pl-3 mb-3 text-xl text-secondary-light font-semibold bg-primaryText text_style2 text-centerpy-1 px-2">
             {projectName}
           </h4>

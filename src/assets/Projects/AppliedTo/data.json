@@ -1,0 +1,18 @@
+{
+    "data": {
+        "de": {
+            "name": "Bewerbungs Manager",
+            "description_1": "Diese Applikation ist mit Tauri gemacht worden, ein Toolkit zur Entwicklung nativer Desktop-Anwendungen mit JavaScript-Frontend-Frameworks. Es erstellt eine Webview-Anwendung, die sich wie ein Browser verhält, uns jedoch die Verwendung nativer Funktionen wie den Zugriff auf das Dateisystem ermöglicht. Rust wird als Backend und Tao/Wry zum erstellen des Fensters und der Webview verwendet."
+        },
+        "en": {
+            "name": "AppliedTo",
+            "description_1": "This Application Tracking System (ATS) is a web application designed to help users keep track of their job applications. It provides a user-friendly interface to manage and organize application details, such as job titles, company names, application status, and notes. Applications can be categorized by status, such as 'Applied', 'Interviewing', 'Ghosted', 'Rejected', 'Accepted', or 'Archived'. Goal of this is to have all applications stored and documented in one place to be able to keep track of them properly.",
+            "features": "User Authentication, Application Management, Notes and Attachments, Search and Filtering, Responsive Design"
+        },
+        "techStack": "MERN - HTML5, CSS3, TailwindCSS, TypeScript, React, MongoDB, Express, Node ",
+        "link": {
+            "demo": "https://appliedto-ats.onrender.com",
+            "repo": "https://github.com/Mirza-bot/AppliedTo"
+        }
+    }
+}
